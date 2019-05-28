@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Chess
+GenericName=Chess
+Comment=Chess Game
+Categories=Games;
+Exec=com.github.retsef.chess
+Icon=application-default-icon
+Terminal=false
+Type=Application
+Keywords=CHess;
