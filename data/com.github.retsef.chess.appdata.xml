@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2019 Roberto Scinocca <roberto.scinocca@gmail.com> -->
+<component type="desktop">
+  <id>com.github.retsef.chess</id>
+  <metadata_license>CC0</metadata_license>
+  <name>Chess</name>
+  <summary>Chess game</summary>
+  <description>
+    <p>Simple Chess game</p>
+  </description>
+
+  <custom>
+     <value key="x-appcenter-color-primary">#603461</value>
+     <value key="x-appcenter-color-primary-text">rgb(255, 255, 255)</value>
+     <value key="x-appcenter-suggested-price">5</value>
+  </custom>
+</component>
