@@ -1,24 +1,23 @@
 # project name and programming language
-project('com.github.retsef.chess', 'vala', 'c')
-
-# Create a new executable, list the files we want to compile, list the dependencies we need, and install
-executable(
-    meson.project_name(),
-    'src/Application.vala',
-    dependencies: [
-        dependency('gtk+-3.0')
-    ],
-    install: true
+project(
+    'com.github.retsef.chess',
+    'vala', 'c',
+    version: '1.0.0'
 )
 
-#Install our .desktop file so the Applications Menu will see it
-install_data(
-    join_paths('data', meson.project_name() + '.desktop'),
-    install_dir: join_paths(get_option('datadir'), 'applications')
+if meson.get_compiler('vala').version().version_compare('<0.40')
+    error('Missing required dependency: valac >= 0.40')
+endif
+
+gnome = import('gnome')
+i18n = import('i18n')
+
+
+chess_resources = gnome.compile_resources(
+    'chess_resources', 'data/' + meson.project_name() + '.gresource.xml',
+    source_dir: 'data'
 )
 
-#Install our .appdata.xml file so AppCenter will see it
-install_data(
-    join_paths('data', meson.project_name() + '.appdata.xml'),
-    install_dir: join_paths(get_option('datadir'), 'metainfo')
-)
+
+subdir('data')
+subdir('src')

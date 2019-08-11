@@ -1,103 +1,97 @@
 public class Coordinate {
-    public enum ROW {
-        A,B,C,D,E,F,G,H;
+    public enum Row {
+        A, B, C, D, E, F, G, H;
 
-        public string toString (){
-            return ((EnumClass)typeof (Something).class_ref ()).get_value(this).value_name;
+        public string to_string() {
+            switch (this) {
+                case A: return "A";
+                case B: return "B";
+                case C: return "C";
+                case D: return "D";
+                case E: return "E";
+                case F: return "F";
+                case G: return "G";
+                case H: return "H";
+                default: assert_not_reached();
+            }
+        }
+
+        public bool is_before(Row row) {
+            return this > row;
+        }
+
+        public bool is_after(Row row) {
+            return this < row;
+        }
+
+        public bool is_first() {
+            return this == A;
+        }
+
+        public bool is_last() {
+            return this == H;
+        }
+
+        public static Row[] all() {
+            return { A, B, C, D, E, F, G, H };
         }
     }
 
-    public ROW row;
-    public int column;
+    public enum Column {
+        C1, C2, C3, C4, C5, C6, C7, C8;
 
-    public Coordinate(ROW _row, int _column) {
-        this.row = _row;
-        this.column = _column;
+        public string to_string() {
+            switch (this) {
+                case C1: return "1";
+                case C2: return "2";
+                case C3: return "3";
+                case C4: return "4";
+                case C5: return "5";
+                case C6: return "6";
+                case C7: return "7";
+                case C8: return "8";
+                default: assert_not_reached();
+            }
+        }
+
+        public bool is_before(Column col) {
+            return this > col;
+        }
+
+        public bool is_after(Column col) {
+            return this < col;
+        }
+
+        public bool is_first() {
+            return this == C1;
+        }
+
+        public bool is_last() {
+            return this == C8;
+        }
+
+        public static Column[] all() {
+            return { C1, C2, C3, C4, C5, C6, C7, C8 };
+        }
+    }
+
+    public Row row;
+    public Column column;
+
+    public Coordinate(Row row, Column column) {
+        this.row = row;
+        this.column = column;
     }
 
 
-    public boolean equals(Object obj) {
-        if(obj==null)
-            return false;
-        if(this.getClass()!=obj.getClass())
-            return false;
+    public bool equals(Object obj) {
+        if(obj == null) return false;
+        //if(this.getClass()!=obj.getClass()) return false;
 
         Coordinate c = (Coordinate) obj;
-        return this.toString().equals(c.toString());
-    }
-
-    public int hashCode() {
-        return this.row.hashCode()+this.column;
+        return this.row == c.row && this.column == c.column;
     }
 
 
-    /**
-     * Funzioni di confronto
-     */
-    public boolean isBeforRow(Coordinate c) {
-        return isBeforeRow(c.getRow());
-    }
-
-    public boolean isAfterRow(Coordinate c) {
-        return isAfterRow(c.getRow());
-    }
-
-    public boolean isBeforeRow(ROW row) {
-        int current_row = this.getRow().ordinal();
-        int request_row = row.ordinal();
-
-        return request_row-current_row > 0;
-    }
-
-    /*
-    public boolean isAfterRow(ROW row) {
-        int current_row = this.getRow().ordinal();
-        int request_row = row.ordinal();
-
-        return current_row-request_row > 0;
-    }
-    */
-
-    public boolean isOnFirstRow() {
-        return this.getRow().equals(ROW.A);
-    }
-
-    public boolean isOnLastRow() {
-        return this.getRow().equals(ROW.H);
-    }
-
-
-
-    public boolean isBeforeColumn(int column) {
-        int current_column = this.getColumn();
-        int request_column = column;
-
-        return request_column-current_column > 0;
-    }
-
-    public boolean isAfterColumn(int column) {
-        int current_column = this.column;
-        int request_column = column;
-
-        return current_column-request_column > 0;
-    }
-
-    /*
-    public boolean isBeforeColumn(Coordinate c) {
-        return isBeforeColumn(c.column);
-    }
-
-    public boolean isAfterColumn(Coordinate c) {
-        return isAfterColumn(c.column);
-    }
-    */
-
-    public boolean isOnFirstColumn() {
-        return this.column >= 1;
-    }
-
-    public boolean isOnLastColumn() {
-        return this.column <= 8;
-    }
 
 }

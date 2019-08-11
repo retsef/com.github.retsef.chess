@@ -1,0 +1,4 @@
+<schemalist>
+  <schema path="/com/github/retsef/chess/saved-state/" id="com.github.retsef.chess.saved-state" gettext-domain="com.github.retsef.chess">
+  </schema>
+</schemalist>

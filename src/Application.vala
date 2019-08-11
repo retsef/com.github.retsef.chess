@@ -19,9 +19,9 @@
 * Authored by: Roberto Scinocca <roberto.scinnocca@gmail.com>
 */
 
-public class MyApp : Gtk.Application {
+public class ChessApp : Gtk.Application {
 
-    public MyApp () {
+    public ChessApp() {
         Object (
             application_id: "com.github.retsef.chess",
             flags: ApplicationFlags.FLAGS_NONE
@@ -29,20 +29,49 @@ public class MyApp : Gtk.Application {
     }
 
     protected override void activate () {
+        try {
+            // If the UI contains custom widgets, their types must've been instantiated once
+            // Type type = typeof(Foo.BarEntry);
+            // assert(type != 0);
+            var builder = new Gtk.Builder();
+            builder.add_from_file("/com/github/retsef/chess/chess.ui");
+            builder.connect_signals(null);
+
+            var window = builder.get_object("window") as Gtk.Window;
+            window.show_all();
+
+            //Gtk.main();
+        } catch (Error e) {
+            stderr.printf ("Could not load UI: %s\n", e.message);
+            return;
+        }
+
+        /*
         var main_window = new Gtk.ApplicationWindow(this);
-        main_window.default_height = 850;
-        main_window.default_width = 625;
+        main_window.default_height = 625;
+        main_window.default_width = 850;
         main_window.title = "Chess";
 
 
+        // Container
+        var container = new Gtk.Layout();
+        //container.background("#00FF00");
 
+        var background = new Gtk.Image.from_file("./assets/background.png");
+        container.add(background);
 
+        var grid = new BoardView();
+        container.add(grid);
 
+        main_window.add(container);
         main_window.show_all();
+        */
     }
+
 
     public static int main (string[] args) {
-        var app = new MyApp ();
-        return app.run (args);
+        var app = new ChessApp();
+        return app.run(args);
     }
+
 }
