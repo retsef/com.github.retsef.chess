@@ -5,13 +5,24 @@
     <file alias="chess.ui" compressed="true" preprocess="xml-stripblanks">chess.ui</file>
   </gresource>
 
-
-  <gresource prefix="/com/github/retsef/chess/pieces">
+  <gresource prefix="/com/github/retsef/chess/backgrounds">
+    <file alias="board.png" compressed="true">assets/board.png</file>
+    <file alias="background.png" compressed="true">assets/background.png</file>
   </gresource>
 
-
-  <gresource prefix="/com/github/retsef/chess/backgrounds">
-    <file alias="background.png" compressed="true">assets/background.png</file>
+  <gresource prefix="/com/github/retsef/chess/pieces">
+    <file alias="BishopB.png" compressed="true">assets/pieces/BishopB.png</file>
+    <file alias="BishopW.png" compressed="true">assets/pieces/BishopW.png</file>
+    <file alias="KingB.png" compressed="true">assets/pieces/KingB.png</file>
+    <file alias="KingW.png" compressed="true">assets/pieces/KingW.png</file>
+    <file alias="PawnB.png" compressed="true">assets/pieces/PawnB.png</file>
+    <file alias="PawnW.png" compressed="true">assets/pieces/PawnW.png</file>
+    <file alias="QueenB.png" compressed="true">assets/pieces/QueenB.png</file>
+    <file alias="QueenW.png" compressed="true">assets/pieces/QueenW.png</file>
+    <file alias="RookB.png" compressed="true">assets/pieces/RookB.png</file>
+    <file alias="RookW.png" compressed="true">assets/pieces/RookW.png</file>
+    <file alias="KnightB.png" compressed="true">assets/pieces/KnightB.png</file>
+    <file alias="KnightW.png" compressed="true">assets/pieces/KnightW.png</file>
   </gresource>
 
 </gresources>

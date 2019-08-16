@@ -34,42 +34,28 @@ public class ChessApp : Gtk.Application {
             // Type type = typeof(Foo.BarEntry);
             // assert(type != 0);
             var builder = new Gtk.Builder();
-            builder.add_from_file("/com/github/retsef/chess/chess.ui");
+            builder.add_from_resource("/com/github/retsef/chess/chess.ui");
             builder.connect_signals(null);
 
             var window = builder.get_object("window") as Gtk.Window;
+            window.window_position = Gtk.WindowPosition.CENTER;
+            window.destroy.connect(Gtk.main_quit);
+
+            //var header = builder.get_object("header") as Gtk.HeaderBar;
+            //window.set_titlebar(header);
+
             window.show_all();
 
-            //Gtk.main();
+            Gtk.main();
         } catch (Error e) {
             stderr.printf ("Could not load UI: %s\n", e.message);
             return;
         }
-
-        /*
-        var main_window = new Gtk.ApplicationWindow(this);
-        main_window.default_height = 625;
-        main_window.default_width = 850;
-        main_window.title = "Chess";
-
-
-        // Container
-        var container = new Gtk.Layout();
-        //container.background("#00FF00");
-
-        var background = new Gtk.Image.from_file("./assets/background.png");
-        container.add(background);
-
-        var grid = new BoardView();
-        container.add(grid);
-
-        main_window.add(container);
-        main_window.show_all();
-        */
-    }
+   }
 
 
     public static int main (string[] args) {
+        Gtk.init(ref args);
         var app = new ChessApp();
         return app.run(args);
     }
