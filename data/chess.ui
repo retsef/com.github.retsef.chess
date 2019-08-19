@@ -68,6 +68,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RA_C1_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -86,6 +102,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RA_C2_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -104,6 +136,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RA_C3_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -122,6 +170,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RA_C4_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -140,6 +204,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RA_C5_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -158,6 +238,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RA_C6_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -176,6 +272,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RA_C7_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -194,6 +306,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RA_C8_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -212,6 +340,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RB_C1_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -230,6 +374,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RB_C2_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -248,6 +408,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RB_C3_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -266,6 +442,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RB_C4_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -284,6 +476,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RB_C5_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -302,6 +510,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RB_C6_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -320,6 +544,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RB_C7_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -338,6 +578,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RB_C8_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -356,6 +612,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RC_C1_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -374,6 +646,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RC_C2_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -392,6 +680,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RC_C3_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -410,6 +714,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RC_C4_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -428,6 +748,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RC_C5_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -446,6 +782,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RC_C6_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -464,6 +816,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RC_C7_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -482,6 +850,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RC_C8_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -500,6 +884,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RD_C1_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -518,6 +918,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RD_C2_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -536,6 +952,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RD_C3_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -554,6 +986,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RD_C4_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -572,6 +1020,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RD_C5_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -590,6 +1054,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RD_C6_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -608,6 +1088,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RD_C7_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -626,6 +1122,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RD_C8_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -644,6 +1156,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RE_C1_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -662,6 +1190,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RE_C2_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -680,6 +1224,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RE_C3_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -698,6 +1258,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RE_C4_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -716,6 +1292,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RE_C5_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -734,6 +1326,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RE_C6_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -752,6 +1360,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RE_C7_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -770,6 +1394,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RE_C8_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -788,6 +1428,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RF_C1_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -806,6 +1462,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RF_C2_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -824,6 +1496,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RF_C3_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -842,6 +1530,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RF_C4_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -860,6 +1564,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RF_C5_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -878,6 +1598,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RF_C6_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -896,6 +1632,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RF_C7_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -914,6 +1666,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RF_C8_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -932,6 +1700,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RG_C1_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -950,6 +1734,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RG_C2_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -968,6 +1768,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RG_C3_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -986,6 +1802,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RG_C4_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -1004,6 +1836,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RG_C5_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -1022,6 +1870,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RG_C6_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -1040,6 +1904,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RG_C7_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -1058,6 +1938,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RG_C8_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -1076,6 +1972,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RH_C1_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">7</property>
@@ -1094,6 +2006,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RH_C2_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">7</property>
@@ -1112,6 +2040,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RH_C3_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">7</property>
@@ -1130,6 +2074,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RH_C4_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">7</property>
@@ -1148,6 +2108,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RH_C5_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">7</property>
@@ -1166,6 +2142,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RH_C6_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">7</property>
@@ -1184,6 +2176,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RH_C7_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">7</property>
@@ -1202,6 +2210,22 @@
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkLayout">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="RH_C8_Piece">
+                        <property name="width_request">80</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="left_attach">7</property>

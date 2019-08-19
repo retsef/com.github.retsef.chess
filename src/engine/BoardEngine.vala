@@ -114,11 +114,10 @@ public class BoardEngine {
             var piece = entry.value;
             var btn = board.get_child_at(coordinate.column, coordinate.row) as Gtk.Button;
 
-            var image = new Gtk.Image.from_resource(piece.symbol_resource());
-            image.set_size_request(10,10);
+            var container = btn.get_children().first().data as Gtk.Layout;
+            var image = container.get_children().first().data as Gtk.Image;
 
-            btn.set_image(image);
-
+            image.set_from_resource(piece.symbol_resource());
         }
     }
 

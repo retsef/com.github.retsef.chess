@@ -42,6 +42,14 @@ public class ChessApp : Gtk.Application {
             window.window_position = Gtk.WindowPosition.CENTER;
             window.destroy.connect(Gtk.main_quit);
 
+            Gtk.CssProvider css_provider = new Gtk.CssProvider();
+            css_provider.load_from_resource("/com/github/retsef/chess/chess.css");
+            Gtk.StyleContext.add_provider_for_screen(
+                Gdk.Screen.get_default(),
+                css_provider,
+                Gtk.STYLE_PROVIDER_PRIORITY_USER);
+
+
             // Start
             var board = builder.get_object("board") as Gtk.Grid;
             engine = new BoardEngine(board);
