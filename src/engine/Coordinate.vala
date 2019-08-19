@@ -1,17 +1,17 @@
 public class Coordinate {
     public enum Row {
-        A, B, C, D, E, F, G, H;
+        RA, RB, RC, RD, RE, RF, RG, RH;
 
         public string to_string() {
             switch (this) {
-                case A: return "A";
-                case B: return "B";
-                case C: return "C";
-                case D: return "D";
-                case E: return "E";
-                case F: return "F";
-                case G: return "G";
-                case H: return "H";
+                case RA: return "A";
+                case RB: return "B";
+                case RC: return "C";
+                case RD: return "D";
+                case RE: return "E";
+                case RF: return "F";
+                case RG: return "G";
+                case RH: return "H";
                 default: assert_not_reached();
             }
         }
@@ -25,15 +25,15 @@ public class Coordinate {
         }
 
         public bool is_first() {
-            return this == A;
+            return this == RA;
         }
 
         public bool is_last() {
-            return this == H;
+            return this == RH;
         }
 
         public static Row[] all() {
-            return { A, B, C, D, E, F, G, H };
+            return { RA, RB, RC, RD, RE, RF, RG, RH };
         }
     }
 

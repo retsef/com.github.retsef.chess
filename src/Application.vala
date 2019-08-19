@@ -20,6 +20,7 @@
 */
 
 public class ChessApp : Gtk.Application {
+    public BoardEngine engine;
 
     public ChessApp() {
         Object (
@@ -41,8 +42,11 @@ public class ChessApp : Gtk.Application {
             window.window_position = Gtk.WindowPosition.CENTER;
             window.destroy.connect(Gtk.main_quit);
 
-            //var header = builder.get_object("header") as Gtk.HeaderBar;
-            //window.set_titlebar(header);
+            // Start
+            var board = builder.get_object("board") as Gtk.Grid;
+            engine = new BoardEngine(board);
+
+            engine.start();
 
             window.show_all();
 

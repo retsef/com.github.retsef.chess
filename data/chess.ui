@@ -5,11 +5,11 @@
   <!-- interface-local-resource-path /home/roberto/Projects/Chess/data -->
   <!-- interface-css-provider-path chess.css -->
   <object class="GtkWindow" id="window">
-    <property name="width_request">685</property>
-    <property name="height_request">685</property>
+    <property name="width_request">680</property>
+    <property name="height_request">680</property>
     <property name="can_focus">False</property>
-    <property name="default_width">685</property>
-    <property name="default_height">685</property>
+    <property name="default_width">680</property>
+    <property name="default_height">680</property>
     <child type="titlebar">
       <object class="GtkHeaderBar" id="header">
         <property name="visible">True</property>
@@ -28,8 +28,8 @@
         <property name="can_focus">False</property>
         <child>
           <object class="GtkImage" id="background">
-            <property name="width_request">685</property>
-            <property name="height_request">685</property>
+            <property name="width_request">680</property>
+            <property name="height_request">680</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="resource">/com/github/retsef/chess/backgrounds/background.png</property>
@@ -41,26 +41,33 @@
             <property name="height_request">680</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="margin_left">3</property>
-            <property name="margin_top">3</property>
             <property name="resource">/com/github/retsef/chess/backgrounds/board.png</property>
           </object>
         </child>
         <child>
           <object class="GtkGrid" id="board">
             <property name="name">CheckBoard</property>
-            <property name="width_request">681</property>
-            <property name="height_request">682</property>
+            <property name="width_request">680</property>
+            <property name="height_request">680</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="hexpand">False</property>
+            <property name="vexpand">False</property>
             <property name="border_width">20</property>
             <property name="row_homogeneous">True</property>
             <property name="column_homogeneous">True</property>
             <child>
               <object class="GtkButton" id="RA_C1">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -69,9 +76,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RA_C2">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -80,9 +94,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RA_C3">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -91,9 +112,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RA_C4">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -102,9 +130,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RA_C5">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -113,9 +148,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RA_C6">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -124,9 +166,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RA_C7">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -135,9 +184,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RA_C8">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -146,9 +202,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RB_C1">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -157,9 +220,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RB_C2">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -168,9 +238,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RB_C3">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -179,9 +256,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RB_C4">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -190,9 +274,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RB_C5">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -201,9 +292,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RB_C6">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -212,9 +310,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RB_C7">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -223,9 +328,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RB_C8">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -234,9 +346,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RC_C1">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -245,9 +364,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RC_C2">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -256,9 +382,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RC_C3">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -267,9 +400,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RC_C4">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -278,9 +418,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RC_C5">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -289,9 +436,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RC_C6">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -300,9 +454,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RC_C7">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -311,9 +472,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RC_C8">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">2</property>
@@ -322,9 +490,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RD_C1">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -333,9 +508,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RD_C2">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -344,9 +526,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RD_C3">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -355,9 +544,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RD_C4">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -366,9 +562,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RD_C5">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -377,9 +580,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RD_C6">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -388,9 +598,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RD_C7">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -399,9 +616,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RD_C8">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">3</property>
@@ -410,9 +634,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RE_C1">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -421,9 +652,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RE_C2">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -432,9 +670,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RE_C3">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -443,9 +688,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RE_C4">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -454,9 +706,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RE_C5">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -465,9 +724,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RE_C6">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -476,9 +742,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RE_C7">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -487,9 +760,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RE_C8">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">4</property>
@@ -498,9 +778,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RF_C1">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -509,9 +796,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RF_C2">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -520,9 +814,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RF_C3">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -531,9 +832,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RF_C4">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -542,9 +850,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RF_C5">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -553,9 +868,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RF_C6">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -564,9 +886,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RF_C7">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -575,9 +904,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RF_C8">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">5</property>
@@ -586,9 +922,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RG_C1">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -597,9 +940,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RG_C2">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -608,9 +958,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RG_C3">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -619,9 +976,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RG_C4">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -630,9 +994,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RG_C5">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -641,9 +1012,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RG_C6">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -652,9 +1030,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RG_C7">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -663,9 +1048,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RG_C8">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">6</property>
@@ -674,9 +1066,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RH_C1">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">7</property>
@@ -685,9 +1084,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RH_C2">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">7</property>
@@ -696,9 +1102,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RH_C3">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">7</property>
@@ -707,9 +1120,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RH_C4">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">7</property>
@@ -718,9 +1138,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RH_C5">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">7</property>
@@ -729,9 +1156,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RH_C6">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">7</property>
@@ -740,9 +1174,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RH_C7">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">7</property>
@@ -751,9 +1192,16 @@
             </child>
             <child>
               <object class="GtkButton" id="RH_C8">
+                <property name="width_request">80</property>
+                <property name="height_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="always_show_image">True</property>
               </object>
               <packing>
                 <property name="left_attach">7</property>
