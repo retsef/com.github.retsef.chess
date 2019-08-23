@@ -53,7 +53,15 @@ public class BoardEngine {
         );
 
         //King
+        battlefield.set(
+            new Coordinate(Coordinate.Row.RA, Coordinate.Column.C4),
+            new King(colour)
+        );
         //Queen
+        battlefield.set(
+            new Coordinate(Coordinate.Row.RA, Coordinate.Column.C5),
+            new Queen(colour)
+        );
 
         //Pawns
         foreach(var column in Coordinate.Column.all()) {
@@ -95,7 +103,15 @@ public class BoardEngine {
         );
 
         //King
+        battlefield.set(
+            new Coordinate(Coordinate.Row.RH, Coordinate.Column.C4),
+            new King(colour)
+        );
         //Queen
+        battlefield.set(
+            new Coordinate(Coordinate.Row.RH, Coordinate.Column.C5),
+            new Queen(colour)
+        );
 
         //Pawns
         foreach(var column in Coordinate.Column.all()) {
@@ -119,6 +135,11 @@ public class BoardEngine {
 
             image.set_from_resource(piece.symbol_resource());
         }
+    }
+
+    [CCode (instance_pos = -1)]
+    public void on_checkboard_click (Gtk.Button source) {
+        //source.label = "Thank you!";
     }
 
 }

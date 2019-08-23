@@ -36,23 +36,24 @@ public class ChessApp : Gtk.Application {
             // assert(type != 0);
             var builder = new Gtk.Builder();
             builder.add_from_resource("/com/github/retsef/chess/chess.ui");
-            builder.connect_signals(null);
 
             var window = builder.get_object("window") as Gtk.Window;
-            window.window_position = Gtk.WindowPosition.CENTER;
             window.destroy.connect(Gtk.main_quit);
 
-            Gtk.CssProvider css_provider = new Gtk.CssProvider();
+            var screen = window.get_screen();
+            var css_provider = new Gtk.CssProvider();
             css_provider.load_from_resource("/com/github/retsef/chess/chess.css");
             Gtk.StyleContext.add_provider_for_screen(
-                Gdk.Screen.get_default(),
-                css_provider,
+                screen, css_provider,
                 Gtk.STYLE_PROVIDER_PRIORITY_USER);
 
 
-            // Start
+            // Engine
             var board = builder.get_object("board") as Gtk.Grid;
             engine = new BoardEngine(board);
+
+            // Actions
+            builder.connect_signals(engine);
 
             engine.start();
 

@@ -32,6 +32,16 @@ public class Coordinate {
             return this == RH;
         }
 
+        public Row next() {
+            if(is_last()) return this;
+            return this + 1;
+        }
+
+        public Row prev() {
+            if(is_first()) return this;
+            return this - 1;
+        }
+
         public static Row[] all() {
             return { RA, RB, RC, RD, RE, RF, RG, RH };
         }
@@ -68,6 +78,16 @@ public class Coordinate {
 
         public bool is_last() {
             return this == C8;
+        }
+
+        public Column next() {
+            if(is_last()) return this;
+            return this + 1;
+        }
+
+        public Column prev() {
+            if(is_first()) return this;
+            return this - 1;
         }
 
         public static Column[] all() {

@@ -8,6 +8,9 @@
     <property name="width_request">680</property>
     <property name="height_request">680</property>
     <property name="can_focus">False</property>
+    <property name="hexpand">False</property>
+    <property name="vexpand">False</property>
+    <property name="window_position">center</property>
     <property name="default_width">680</property>
     <property name="default_height">680</property>
     <child type="titlebar">
@@ -17,7 +20,12 @@
         <property name="title" translatable="yes">Chess</property>
         <property name="show_close_button">True</property>
         <child>
-          <placeholder/>
+          <object class="GtkButton">
+            <property name="label" translatable="yes">New Game</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
         </child>
       </object>
     </child>
@@ -67,11 +75,14 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="width">80</property>
+                    <property name="height">80</property>
                     <child>
                       <object class="GtkImage" id="RA_C1_Piece">
                         <property name="width_request">80</property>
@@ -101,6 +112,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -135,6 +147,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -169,6 +182,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -203,6 +217,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -237,6 +252,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -271,6 +287,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -305,6 +322,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -339,6 +357,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -373,6 +392,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -407,6 +427,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -441,6 +462,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -475,6 +497,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -509,6 +532,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -543,6 +567,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -577,6 +602,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -611,6 +637,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -645,6 +672,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -679,6 +707,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -713,6 +742,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -747,6 +777,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -781,6 +812,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -815,6 +847,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -849,6 +882,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -883,6 +917,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -917,6 +952,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -951,6 +987,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -985,6 +1022,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1019,6 +1057,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1053,6 +1092,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1087,6 +1127,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1121,6 +1162,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1155,6 +1197,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1189,6 +1232,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1223,6 +1267,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1257,6 +1302,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1291,6 +1337,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1325,6 +1372,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1359,6 +1407,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1393,6 +1442,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1427,6 +1477,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1461,6 +1512,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1495,6 +1547,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1529,6 +1582,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1563,6 +1617,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1597,6 +1652,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1631,6 +1687,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1665,6 +1722,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1699,6 +1757,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1733,6 +1792,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1767,6 +1827,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1801,6 +1862,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1835,6 +1897,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1869,6 +1932,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1903,6 +1967,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1937,6 +2002,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -1971,6 +2037,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -2005,6 +2072,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -2039,6 +2107,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -2073,6 +2142,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -2107,6 +2177,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -2141,6 +2212,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -2175,6 +2247,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
@@ -2209,6 +2282,7 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
+                <property name="action_name">on_checkboard_click</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkLayout">
