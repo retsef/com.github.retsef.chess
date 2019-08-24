@@ -1,7 +1,33 @@
-.header-bar, #header {
-    background-color: #A9F5A9;
+headerbar * {
+    color: white;
 }
 
-#board GtkButton {
+headerbar.titlebar {
+    background: #803D0E;
+}
+
+
+/** button **/
+.check_board button {
     padding: 0;
+}
+
+.check_board button:hover {
+    background: rgba(129, 61, 15, 0.3)
+}
+
+/** move **/
+.check_board button.move {
+    background: rgba(255,165,79, 0.6);
+}
+.check_board button.move:hover {
+    background: rgba(255,165,79, 0.9);
+}
+
+/** eat **/
+.check_board button.eat {
+    background: rgba(255,79,81, 0.6);
+}
+.check_board button.eat:hover {
+    background: rgba(255,79,81, 0.9);
 }

@@ -5,11 +5,8 @@
   <!-- interface-local-resource-path /home/roberto/Projects/Chess/data -->
   <!-- interface-css-provider-path chess.css -->
   <object class="GtkWindow" id="window">
-    <property name="width_request">680</property>
-    <property name="height_request">680</property>
     <property name="can_focus">False</property>
-    <property name="hexpand">False</property>
-    <property name="vexpand">False</property>
+    <property name="resizable">False</property>
     <property name="window_position">center</property>
     <property name="default_width">680</property>
     <property name="default_height">680</property>
@@ -75,8 +72,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -112,8 +110,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -147,8 +146,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -182,8 +182,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -217,8 +218,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -252,8 +254,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -287,8 +290,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -322,8 +326,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -357,8 +362,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -392,8 +398,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -427,8 +434,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -462,8 +470,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -497,8 +506,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -532,8 +542,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -567,8 +578,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -602,8 +614,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -637,8 +650,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -672,8 +686,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -707,8 +722,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -742,8 +758,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -777,8 +794,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -812,8 +830,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -847,8 +866,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -882,8 +902,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -917,8 +938,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -952,8 +974,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -987,8 +1010,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1022,8 +1046,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1057,8 +1082,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1092,8 +1118,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1127,8 +1154,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1162,8 +1190,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1197,8 +1226,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1232,8 +1262,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1267,8 +1298,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1302,8 +1334,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1337,8 +1370,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1372,8 +1406,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1407,8 +1442,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1442,8 +1478,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1477,8 +1514,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1512,8 +1550,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1547,8 +1586,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1582,8 +1622,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1617,8 +1658,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1652,8 +1694,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1687,8 +1730,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1722,8 +1766,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1757,8 +1802,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1792,8 +1838,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1827,8 +1874,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1862,8 +1910,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1897,8 +1946,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1932,8 +1982,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -1967,8 +2018,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -2002,8 +2054,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -2037,8 +2090,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -2072,8 +2126,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -2107,8 +2162,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -2142,8 +2198,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -2177,8 +2234,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -2212,8 +2270,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -2247,8 +2306,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
@@ -2282,8 +2342,9 @@
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
-                <property name="action_name">on_checkboard_click</property>
+                <property name="relief">none</property>
                 <property name="always_show_image">True</property>
+                <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>

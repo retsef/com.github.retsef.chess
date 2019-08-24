@@ -138,7 +138,7 @@ public class BoardEngine {
     }
 
     [CCode (instance_pos = -1)]
-    public void on_checkboard_click (Gtk.Button source) {
+    public void on_checkboard_clicked(Gtk.Button source) {
         //source.label = "Thank you!";
     }
 

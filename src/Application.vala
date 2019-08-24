@@ -31,22 +31,16 @@ public class ChessApp : Gtk.Application {
 
     protected override void activate () {
         try {
-            // If the UI contains custom widgets, their types must've been instantiated once
-            // Type type = typeof(Foo.BarEntry);
-            // assert(type != 0);
-            var builder = new Gtk.Builder();
-            builder.add_from_resource("/com/github/retsef/chess/chess.ui");
-
-            var window = builder.get_object("window") as Gtk.Window;
-            window.destroy.connect(Gtk.main_quit);
-
-            var screen = window.get_screen();
+            //Css
             var css_provider = new Gtk.CssProvider();
             css_provider.load_from_resource("/com/github/retsef/chess/chess.css");
             Gtk.StyleContext.add_provider_for_screen(
-                screen, css_provider,
+                Gdk.Screen.get_default(), css_provider,
                 Gtk.STYLE_PROVIDER_PRIORITY_USER);
 
+            // UI
+            var builder = new Gtk.Builder();
+            builder.add_from_resource("/com/github/retsef/chess/chess.ui");
 
             // Engine
             var board = builder.get_object("board") as Gtk.Grid;
@@ -57,6 +51,9 @@ public class ChessApp : Gtk.Application {
 
             engine.start();
 
+
+            var window = builder.get_object("window") as Gtk.Window;
+            window.destroy.connect(Gtk.main_quit);
             window.show_all();
 
             Gtk.main();
