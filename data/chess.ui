@@ -1,92 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.22.1 -->
+<!-- Generated with glade 3.38.2 
+
+Copyright (C) 
+
+This file is part of Chess.
+
+Chess is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Chess is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Chess.  If not, see <http://www.gnu.org/licenses/>.
+
+Author: Roberto Scinocca
+
+-->
 <interface>
   <requires lib="gtk+" version="3.20"/>
   <!-- interface-local-resource-path /home/roberto/Projects/Chess/data -->
   <!-- interface-css-provider-path chess.css -->
+  <!-- interface-license-type gplv3 -->
+  <!-- interface-name Chess -->
+  <!-- interface-authors Roberto Scinocca -->
   <object class="GtkWindow" id="window">
-    <property name="can_focus">False</property>
+    <property name="can-focus">False</property>
     <property name="resizable">False</property>
-    <property name="window_position">center</property>
-    <property name="default_width">680</property>
-    <property name="default_height">680</property>
-    <child type="titlebar">
-      <object class="GtkHeaderBar" id="header">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <property name="title" translatable="yes">Chess</property>
-        <property name="show_close_button">True</property>
-        <child>
-          <object class="GtkButton">
-            <property name="label" translatable="yes">New Game</property>
-            <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-          </object>
-        </child>
-      </object>
-    </child>
+    <property name="window-position">center</property>
+    <property name="default-width">680</property>
+    <property name="default-height">680</property>
     <child>
       <object class="GtkLayout">
         <property name="name">Container</property>
         <property name="visible">True</property>
-        <property name="can_focus">False</property>
+        <property name="can-focus">False</property>
         <child>
           <object class="GtkImage" id="background">
-            <property name="width_request">680</property>
-            <property name="height_request">680</property>
+            <property name="width-request">680</property>
+            <property name="height-request">680</property>
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <property name="resource">/com/github/retsef/chess/backgrounds/background.png</property>
           </object>
         </child>
         <child>
           <object class="GtkImage" id="board_bg">
-            <property name="width_request">680</property>
-            <property name="height_request">680</property>
+            <property name="width-request">680</property>
+            <property name="height-request">680</property>
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <property name="resource">/com/github/retsef/chess/backgrounds/board.png</property>
           </object>
         </child>
         <child>
+          <!-- n-columns=8 n-rows=8 -->
           <object class="GtkGrid" id="board">
             <property name="name">CheckBoard</property>
-            <property name="width_request">680</property>
-            <property name="height_request">680</property>
+            <property name="width-request">680</property>
+            <property name="height-request">680</property>
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <property name="hexpand">False</property>
             <property name="vexpand">False</property>
-            <property name="border_width">20</property>
-            <property name="row_homogeneous">True</property>
-            <property name="column_homogeneous">True</property>
+            <property name="border-width">20</property>
+            <property name="row-homogeneous">True</property>
+            <property name="column-homogeneous">True</property>
             <child>
-              <object class="GtkButton" id="RA_C1">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CA_R8">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="width">80</property>
                     <property name="height">80</property>
                     <child>
-                      <object class="GtkImage" id="RA_C1_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CA_R8_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -95,34 +104,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">0</property>
-                <property name="top_attach">0</property>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RA_C2">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CA_R7">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RA_C2_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CA_R7_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -131,34 +140,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">0</property>
-                <property name="top_attach">1</property>
+                <property name="left-attach">0</property>
+                <property name="top-attach">1</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RA_C3">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CA_R6">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RA_C3_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CA_R6_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -167,34 +176,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">0</property>
-                <property name="top_attach">2</property>
+                <property name="left-attach">0</property>
+                <property name="top-attach">2</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RA_C4">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CA_R5">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RA_C4_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CA_R5_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -203,34 +212,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">0</property>
-                <property name="top_attach">3</property>
+                <property name="left-attach">0</property>
+                <property name="top-attach">3</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RA_C5">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CA_R4">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RA_C5_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CA_R4_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -239,34 +248,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">0</property>
-                <property name="top_attach">4</property>
+                <property name="left-attach">0</property>
+                <property name="top-attach">4</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RA_C6">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CA_R3">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RA_C6_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CA_R3_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -275,34 +284,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">0</property>
-                <property name="top_attach">5</property>
+                <property name="left-attach">0</property>
+                <property name="top-attach">5</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RA_C7">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CA_R2">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RA_C7_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CA_R2_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -311,34 +320,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">0</property>
-                <property name="top_attach">6</property>
+                <property name="left-attach">0</property>
+                <property name="top-attach">6</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RA_C8">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CA_R1">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RA_C8_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CA_R1_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -347,34 +356,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">0</property>
-                <property name="top_attach">7</property>
+                <property name="left-attach">0</property>
+                <property name="top-attach">7</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RB_C1">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CB_R8">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RB_C1_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CB_R8_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -383,34 +392,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">1</property>
-                <property name="top_attach">0</property>
+                <property name="left-attach">1</property>
+                <property name="top-attach">0</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RB_C2">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CB_R7">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RB_C2_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CB_R7_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -419,34 +428,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">1</property>
-                <property name="top_attach">1</property>
+                <property name="left-attach">1</property>
+                <property name="top-attach">1</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RB_C3">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CB_R6">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RB_C3_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CB_R6_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -455,34 +464,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">1</property>
-                <property name="top_attach">2</property>
+                <property name="left-attach">1</property>
+                <property name="top-attach">2</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RB_C4">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CB_R5">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RB_C4_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CB_R5_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -491,34 +500,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">1</property>
-                <property name="top_attach">3</property>
+                <property name="left-attach">1</property>
+                <property name="top-attach">3</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RB_C5">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CB_R4">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RB_C5_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CB_R4_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -527,34 +536,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">1</property>
-                <property name="top_attach">4</property>
+                <property name="left-attach">1</property>
+                <property name="top-attach">4</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RB_C6">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CB_R3">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RB_C6_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CB_R3_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -563,34 +572,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">1</property>
-                <property name="top_attach">5</property>
+                <property name="left-attach">1</property>
+                <property name="top-attach">5</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RB_C7">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CB_R2">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RB_C7_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CB_R2_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -599,34 +608,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">1</property>
-                <property name="top_attach">6</property>
+                <property name="left-attach">1</property>
+                <property name="top-attach">6</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RB_C8">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CB_R1">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RB_C8_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CB_R1_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -635,34 +644,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">1</property>
-                <property name="top_attach">7</property>
+                <property name="left-attach">1</property>
+                <property name="top-attach">7</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RC_C1">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CC_R8">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RC_C1_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CC_R8_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -671,34 +680,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">2</property>
-                <property name="top_attach">0</property>
+                <property name="left-attach">2</property>
+                <property name="top-attach">0</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RC_C2">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CC_R7">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RC_C2_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CC_R7_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -707,34 +716,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">2</property>
-                <property name="top_attach">1</property>
+                <property name="left-attach">2</property>
+                <property name="top-attach">1</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RC_C3">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CC_R6">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RC_C3_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CC_R6_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -743,34 +752,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">2</property>
-                <property name="top_attach">2</property>
+                <property name="left-attach">2</property>
+                <property name="top-attach">2</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RC_C4">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CC_R5">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RC_C4_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CC_R5_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -779,34 +788,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">2</property>
-                <property name="top_attach">3</property>
+                <property name="left-attach">2</property>
+                <property name="top-attach">3</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RC_C5">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CC_R4">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RC_C5_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CC_R4_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -815,34 +824,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">2</property>
-                <property name="top_attach">4</property>
+                <property name="left-attach">2</property>
+                <property name="top-attach">4</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RC_C6">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CC_R3">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RC_C6_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CC_R3_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -851,34 +860,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">2</property>
-                <property name="top_attach">5</property>
+                <property name="left-attach">2</property>
+                <property name="top-attach">5</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RC_C7">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CC_R2">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RC_C7_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CC_R2_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -887,34 +896,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">2</property>
-                <property name="top_attach">6</property>
+                <property name="left-attach">2</property>
+                <property name="top-attach">6</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RC_C8">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CC_R1">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RC_C8_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CC_R1_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -923,34 +932,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">2</property>
-                <property name="top_attach">7</property>
+                <property name="left-attach">2</property>
+                <property name="top-attach">7</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RD_C1">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CD_R8">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RD_C1_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CD_R8_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -959,34 +968,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">3</property>
-                <property name="top_attach">0</property>
+                <property name="left-attach">3</property>
+                <property name="top-attach">0</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RD_C2">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CD_R7">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RD_C2_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CD_R7_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -995,34 +1004,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">3</property>
-                <property name="top_attach">1</property>
+                <property name="left-attach">3</property>
+                <property name="top-attach">1</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RD_C3">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CD_R6">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RD_C3_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CD_R6_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1031,34 +1040,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">3</property>
-                <property name="top_attach">2</property>
+                <property name="left-attach">3</property>
+                <property name="top-attach">2</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RD_C4">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CD_R5">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RD_C4_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CD_R5_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1067,34 +1076,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">3</property>
-                <property name="top_attach">3</property>
+                <property name="left-attach">3</property>
+                <property name="top-attach">3</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RD_C5">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CD_R4">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RD_C5_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CD_R4_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1103,34 +1112,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">3</property>
-                <property name="top_attach">4</property>
+                <property name="left-attach">3</property>
+                <property name="top-attach">4</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RD_C6">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CD_R3">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RD_C6_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CD_R3_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1139,34 +1148,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">3</property>
-                <property name="top_attach">5</property>
+                <property name="left-attach">3</property>
+                <property name="top-attach">5</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RD_C7">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CD_R2">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RD_C7_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CD_R2_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1175,34 +1184,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">3</property>
-                <property name="top_attach">6</property>
+                <property name="left-attach">3</property>
+                <property name="top-attach">6</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RD_C8">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CD_R1">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RD_C8_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CD_R1_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1211,34 +1220,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">3</property>
-                <property name="top_attach">7</property>
+                <property name="left-attach">3</property>
+                <property name="top-attach">7</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RE_C1">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CE_R8">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RE_C1_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CE_R8_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1247,34 +1256,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">4</property>
-                <property name="top_attach">0</property>
+                <property name="left-attach">4</property>
+                <property name="top-attach">0</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RE_C2">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CE_R7">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RE_C2_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CE_R7_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1283,34 +1292,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">4</property>
-                <property name="top_attach">1</property>
+                <property name="left-attach">4</property>
+                <property name="top-attach">1</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RE_C3">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CE_R6">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RE_C3_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CE_R6_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1319,34 +1328,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">4</property>
-                <property name="top_attach">2</property>
+                <property name="left-attach">4</property>
+                <property name="top-attach">2</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RE_C4">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CE_R5">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RE_C4_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CE_R5_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1355,34 +1364,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">4</property>
-                <property name="top_attach">3</property>
+                <property name="left-attach">4</property>
+                <property name="top-attach">3</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RE_C5">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CE_R4">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RE_C5_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CE_R4_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1391,34 +1400,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">4</property>
-                <property name="top_attach">4</property>
+                <property name="left-attach">4</property>
+                <property name="top-attach">4</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RE_C6">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CE_R3">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RE_C6_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CE_R3_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1427,34 +1436,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">4</property>
-                <property name="top_attach">5</property>
+                <property name="left-attach">4</property>
+                <property name="top-attach">5</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RE_C7">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CE_R2">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RE_C7_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CE_R2_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1463,34 +1472,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">4</property>
-                <property name="top_attach">6</property>
+                <property name="left-attach">4</property>
+                <property name="top-attach">6</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RE_C8">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CE_R1">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RE_C8_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CE_R1_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1499,34 +1508,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">4</property>
-                <property name="top_attach">7</property>
+                <property name="left-attach">4</property>
+                <property name="top-attach">7</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RF_C1">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CF_R8">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RF_C1_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CF_R8_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1535,34 +1544,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">5</property>
-                <property name="top_attach">0</property>
+                <property name="left-attach">5</property>
+                <property name="top-attach">0</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RF_C2">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CF_R7">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RF_C2_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CF_R7_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1571,34 +1580,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">5</property>
-                <property name="top_attach">1</property>
+                <property name="left-attach">5</property>
+                <property name="top-attach">1</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RF_C3">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CF_R6">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RF_C3_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CF_R6_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1607,34 +1616,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">5</property>
-                <property name="top_attach">2</property>
+                <property name="left-attach">5</property>
+                <property name="top-attach">2</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RF_C4">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CF_R5">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RF_C4_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CF_R5_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1643,34 +1652,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">5</property>
-                <property name="top_attach">3</property>
+                <property name="left-attach">5</property>
+                <property name="top-attach">3</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RF_C5">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CF_R4">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RF_C5_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CF_R4_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1679,34 +1688,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">5</property>
-                <property name="top_attach">4</property>
+                <property name="left-attach">5</property>
+                <property name="top-attach">4</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RF_C6">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CF_R3">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RF_C6_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CF_R3_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1715,34 +1724,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">5</property>
-                <property name="top_attach">5</property>
+                <property name="left-attach">5</property>
+                <property name="top-attach">5</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RF_C7">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CF_R2">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RF_C7_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CF_R2_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1751,34 +1760,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">5</property>
-                <property name="top_attach">6</property>
+                <property name="left-attach">5</property>
+                <property name="top-attach">6</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RF_C8">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CF_R1">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RF_C8_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CF_R1_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1787,34 +1796,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">5</property>
-                <property name="top_attach">7</property>
+                <property name="left-attach">5</property>
+                <property name="top-attach">7</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RG_C1">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CG_R8">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RG_C1_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CG_R8_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1823,34 +1832,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">6</property>
-                <property name="top_attach">0</property>
+                <property name="left-attach">6</property>
+                <property name="top-attach">0</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RG_C2">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CG_R7">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RG_C2_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CG_R7_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1859,34 +1868,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">6</property>
-                <property name="top_attach">1</property>
+                <property name="left-attach">6</property>
+                <property name="top-attach">1</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RG_C3">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CG_R6">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RG_C3_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CG_R6_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1895,34 +1904,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">6</property>
-                <property name="top_attach">2</property>
+                <property name="left-attach">6</property>
+                <property name="top-attach">2</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RG_C4">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CG_R5">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RG_C4_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CG_R5_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1931,34 +1940,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">6</property>
-                <property name="top_attach">3</property>
+                <property name="left-attach">6</property>
+                <property name="top-attach">3</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RG_C5">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CG_R4">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RG_C5_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CG_R4_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -1967,34 +1976,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">6</property>
-                <property name="top_attach">4</property>
+                <property name="left-attach">6</property>
+                <property name="top-attach">4</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RG_C6">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CG_R3">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RG_C6_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CG_R3_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -2003,34 +2012,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">6</property>
-                <property name="top_attach">5</property>
+                <property name="left-attach">6</property>
+                <property name="top-attach">5</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RG_C7">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CG_R2">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RG_C7_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CG_R2_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -2039,34 +2048,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">6</property>
-                <property name="top_attach">6</property>
+                <property name="left-attach">6</property>
+                <property name="top-attach">6</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RG_C8">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CG_R1">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RG_C8_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CG_R1_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -2075,34 +2084,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">6</property>
-                <property name="top_attach">7</property>
+                <property name="left-attach">6</property>
+                <property name="top-attach">7</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RH_C1">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CH_R8">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RH_C1_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CH_R8_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -2111,34 +2120,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">7</property>
-                <property name="top_attach">0</property>
+                <property name="left-attach">7</property>
+                <property name="top-attach">0</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RH_C2">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CH_R7">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
                       <object class="GtkImage" id="RH_C2_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -2147,34 +2156,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">7</property>
-                <property name="top_attach">1</property>
+                <property name="left-attach">7</property>
+                <property name="top-attach">1</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RH_C3">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CH_R6">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RH_C3_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CH_R6_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -2183,34 +2192,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">7</property>
-                <property name="top_attach">2</property>
+                <property name="left-attach">7</property>
+                <property name="top-attach">2</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RH_C4">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CH_R5">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RH_C4_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CH_R5_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -2219,34 +2228,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">7</property>
-                <property name="top_attach">3</property>
+                <property name="left-attach">7</property>
+                <property name="top-attach">3</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RH_C5">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CH_R4">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RH_C5_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CH_R4_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -2255,34 +2264,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">7</property>
-                <property name="top_attach">4</property>
+                <property name="left-attach">7</property>
+                <property name="top-attach">4</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RH_C6">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CH_R3">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RH_C6_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CH_R3_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -2291,34 +2300,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">7</property>
-                <property name="top_attach">5</property>
+                <property name="left-attach">7</property>
+                <property name="top-attach">5</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RH_C7">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CH_R2">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RH_C7_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CH_R2_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -2327,34 +2336,34 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">7</property>
-                <property name="top_attach">6</property>
+                <property name="left-attach">7</property>
+                <property name="top-attach">6</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="RH_C8">
-                <property name="width_request">80</property>
-                <property name="height_request">80</property>
+              <object class="GtkButton" id="CH_R1">
+                <property name="width-request">80</property>
+                <property name="height-request">80</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
                 <property name="hexpand">False</property>
                 <property name="vexpand">False</property>
                 <property name="relief">none</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
                 <child>
                   <object class="GtkLayout">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImage" id="RH_C8_Piece">
-                        <property name="width_request">80</property>
-                        <property name="height_request">80</property>
+                      <object class="GtkImage" id="CH_R1_Piece">
+                        <property name="width-request">80</property>
+                        <property name="height-request">80</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="halign">center</property>
                         <property name="valign">center</property>
                       </object>
@@ -2363,8 +2372,8 @@
                 </child>
               </object>
               <packing>
-                <property name="left_attach">7</property>
-                <property name="top_attach">7</property>
+                <property name="left-attach">7</property>
+                <property name="top-attach">7</property>
               </packing>
             </child>
             <style>
@@ -2375,6 +2384,22 @@
         <style>
           <class name="main_container"/>
         </style>
+      </object>
+    </child>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="header">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="title" translatable="yes">Chess</property>
+        <property name="show-close-button">True</property>
+        <child>
+          <object class="GtkButton">
+            <property name="label" translatable="yes">New Game</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+        </child>
       </object>
     </child>
   </object>

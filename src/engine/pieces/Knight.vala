@@ -1,7 +1,8 @@
 public class Knight : Piece {
 
     public Knight(Piece.Colour colour) {
-        base(colour);
+        // base(colour);
+        this.colour = colour;
     }
 
 
@@ -9,6 +10,10 @@ public class Knight : Piece {
         return base.colour == Piece.Colour.White ?
         "/com/github/retsef/chess/pieces/KnightW.png" :
         "/com/github/retsef/chess/pieces/KnightB.png";
+    }
+
+    public override string to_string() {
+        return "Knight " + base.colour.to_string();
     }
 
     public override List<Coordinate> movement(Coordinate start) {

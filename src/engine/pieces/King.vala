@@ -1,14 +1,18 @@
 public class King : Piece {
 
     public King(Piece.Colour colour) {
-        base(colour);
+        // base(colour);
+        this.colour = colour;
     }
-
 
     public override string symbol_resource() {
         return base.colour == Piece.Colour.White ?
         "/com/github/retsef/chess/pieces/KingW.png" :
         "/com/github/retsef/chess/pieces/KingB.png";
+    }
+
+    public override string to_string() {
+        return "King " + base.colour.to_string();
     }
 
     public override List<Coordinate> movement(Coordinate start) {

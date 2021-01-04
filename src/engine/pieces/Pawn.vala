@@ -1,7 +1,8 @@
 public class Pawn : Piece{
 
     public Pawn(Piece.Colour colour) {
-        base(colour);
+        // base(colour);
+        this.colour = colour;
     }
 
 
@@ -9,6 +10,10 @@ public class Pawn : Piece{
         return base.colour == Piece.Colour.White ?
         "/com/github/retsef/chess/pieces/PawnW.png" :
         "/com/github/retsef/chess/pieces/PawnB.png";
+    }
+
+    public override string to_string() {
+        return "Pawn " + base.colour.to_string();
     }
 
     public override List<Coordinate> movement(Coordinate start) {

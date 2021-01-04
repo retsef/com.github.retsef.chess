@@ -1,17 +1,17 @@
 public class Coordinate {
     public enum Row {
-        RA, RB, RC, RD, RE, RF, RG, RH;
+        R1, R2, R3, R4, R5, R6, R7, R8;
 
         public string to_string() {
             switch (this) {
-                case RA: return "A";
-                case RB: return "B";
-                case RC: return "C";
-                case RD: return "D";
-                case RE: return "E";
-                case RF: return "F";
-                case RG: return "G";
-                case RH: return "H";
+                case R1: return "1";
+                case R2: return "2";
+                case R3: return "3";
+                case R4: return "4";
+                case R5: return "5";
+                case R6: return "6";
+                case R7: return "7";
+                case R8: return "8";
                 default: assert_not_reached();
             }
         }
@@ -25,11 +25,11 @@ public class Coordinate {
         }
 
         public bool is_first() {
-            return this == RA;
+            return this == R1;
         }
 
         public bool is_last() {
-            return this == RH;
+            return this == R8;
         }
 
         public Row next() {
@@ -43,23 +43,23 @@ public class Coordinate {
         }
 
         public static Row[] all() {
-            return { RA, RB, RC, RD, RE, RF, RG, RH };
+            return { R1, R2, R3, R4, R5, R6, R7, R8 };
         }
     }
 
     public enum Column {
-        C1, C2, C3, C4, C5, C6, C7, C8;
+        CA, CB, CC, CD, CE, CF, CG, CH;
 
         public string to_string() {
             switch (this) {
-                case C1: return "1";
-                case C2: return "2";
-                case C3: return "3";
-                case C4: return "4";
-                case C5: return "5";
-                case C6: return "6";
-                case C7: return "7";
-                case C8: return "8";
+                case CA: return "A";
+                case CB: return "B";
+                case CC: return "C";
+                case CD: return "D";
+                case CE: return "E";
+                case CF: return "F";
+                case CG: return "G";
+                case CH: return "H";
                 default: assert_not_reached();
             }
         }
@@ -73,11 +73,11 @@ public class Coordinate {
         }
 
         public bool is_first() {
-            return this == C1;
+            return this == CA;
         }
 
         public bool is_last() {
-            return this == C8;
+            return this == CH;
         }
 
         public Column next() {
@@ -91,7 +91,7 @@ public class Coordinate {
         }
 
         public static Column[] all() {
-            return { C1, C2, C3, C4, C5, C6, C7, C8 };
+            return { CA, CB, CC, CD, CE, CF, CG, CH };
         }
     }
 
@@ -113,5 +113,9 @@ public class Coordinate {
     }
 
 
+
+    public string to_string() {
+        return this.row.to_string() + this.column.to_string();
+    }
 
 }

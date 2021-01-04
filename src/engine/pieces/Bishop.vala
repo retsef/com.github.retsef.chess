@@ -1,15 +1,18 @@
 public class Bishop : Piece {
 
     public Bishop(Piece.Colour colour) {
-        base(colour);
+        // base(colour);
+        this.colour = colour;
     }
-
-
 
     public override string symbol_resource() {
         return base.colour == Piece.Colour.White ?
         "/com/github/retsef/chess/pieces/BishopW.png" :
         "/com/github/retsef/chess/pieces/BishopB.png";
+    }
+
+    public override string to_string() {
+        return "Bishop " + base.colour.to_string();
     }
 
     public override List<Coordinate> movement(Coordinate start) {

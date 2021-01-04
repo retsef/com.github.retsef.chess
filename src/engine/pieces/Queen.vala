@@ -1,15 +1,19 @@
 public class Queen : Piece {
 
     public Queen(Piece.Colour colour) {
-        base(colour);
+        // base(colour);
+        this.colour = colour;
     }
-
 
 
     public override string symbol_resource() {
         return base.colour == Piece.Colour.White ?
         "/com/github/retsef/chess/pieces/QueenW.png" :
         "/com/github/retsef/chess/pieces/QueenB.png";
+    }
+
+    public override string to_string() {
+        return "Queen " + base.colour.to_string();
     }
 
     public override List<Coordinate> movement(Coordinate start) {

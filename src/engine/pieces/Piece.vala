@@ -18,12 +18,14 @@ public abstract class Piece {
 
     public Colour colour;
 
-    public Piece(Colour colour) {
-        this.colour = colour;
-    }
+    // public Piece(Colour colour) {
+    //  this.colour = colour;
+    // }
 
     public abstract string symbol_resource();
 
     public abstract List<Coordinate> movement(Coordinate start);
+
+    public abstract string to_string();
 
 }

@@ -6,3 +6,4 @@ public class BoardBoxView : Gtk.Button {
     }
 
 }
+
