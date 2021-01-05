@@ -5,6 +5,11 @@
     <file alias="chess.ui" compressed="true" preprocess="xml-stripblanks">chess.ui</file>
   </gresource>
 
+  <gresource prefix="/com/github/retsef/chess/widgets">
+    <file alias="board_box_widget.ui" compressed="true" preprocess="xml-stripblanks">widgets/board_box_widget.ui</file>
+    <file alias="board_widget.ui" compressed="true" preprocess="xml-stripblanks">widgets/board_widget.ui</file>
+  </gresource>
+
   <gresource prefix="/com/github/retsef/chess/backgrounds">
     <file alias="board.png" compressed="true">assets/board.png</file>
     <file alias="background.png" compressed="true">assets/background.png</file>

@@ -43,7 +43,7 @@ public class ChessApp : Gtk.Application {
             builder.add_from_resource("/com/github/retsef/chess/chess.ui");
 
             // Engine
-            var board = builder.get_object("board") as Gtk.Grid;
+            var board = builder.get_object("board") as BoardView;
             engine = new BoardEngine(board);
 
             // Actions

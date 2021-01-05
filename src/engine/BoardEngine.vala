@@ -1,10 +1,10 @@
 using Gee;
 
 public class BoardEngine {
-    public Gtk.Grid board;
+    public BoardView board;
     public HashMap<Coordinate, Piece> battlefield;
 
-    public BoardEngine(Gtk.Grid board) {
+    public BoardEngine(BoardView board) {
         this.board = board;
 
         battlefield = new HashMap<Coordinate, Piece>();
@@ -139,7 +139,8 @@ public class BoardEngine {
 
     [CCode (instance_pos = -1)]
     public void on_checkboard_clicked(Gtk.Button source) {
-        //source.label = "Thank you!";
+        // stdout.printf ("%s => %s\n", entry.key.to_string(), entry.value.to_string());
+        stdout.printf ("%s", "clicked!");
     }
 
 }

@@ -18,7 +18,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Chess.  If not, see <http://www.gnu.org/licenses/>.
 
-Author: Roberto Scinocca
+Author: Roberto Scinocca <roberto.scinnocca@gmail.com>
 
 -->
 <interface>
@@ -59,7 +59,7 @@ Author: Roberto Scinocca
         </child>
         <child>
           <!-- n-columns=8 n-rows=8 -->
-          <object class="GtkGrid" id="board">
+          <object class="BoardView" id="board">
             <property name="name">CheckBoard</property>
             <property name="width-request">680</property>
             <property name="height-request">680</property>

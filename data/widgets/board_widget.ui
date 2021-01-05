@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <!-- interface-local-resource-path /home/roberto/Projects/Chess/data/widgets -->
+
+  <!-- n-columns=8 n-rows=8 -->
+  <template class="BoardView" parent="GtkGrid">
+    <property name="name">CheckBoard</property>
+    <property name="width-request">680</property>
+    <property name="height-request">680</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="hexpand">False</property>
+    <property name="vexpand">False</property>
+    <property name="border-width">20</property>
+    <property name="row-homogeneous">True</property>
+    <property name="column-homogeneous">True</property>
+    <child>
+      <object class="BoardBoxWidget" id="CA_R8">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">0</property>
+        <property name="top-attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CA_R7">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">0</property>
+        <property name="top-attach">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CA_R6">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">0</property>
+        <property name="top-attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CA_R5">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">0</property>
+        <property name="top-attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CA_R4">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">0</property>
+        <property name="top-attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CA_R3">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">0</property>
+        <property name="top-attach">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CA_R2">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">0</property>
+        <property name="top-attach">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CA_R1">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">0</property>
+        <property name="top-attach">7</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CB_R8">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">1</property>
+        <property name="top-attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CB_R7">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">1</property>
+        <property name="top-attach">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CB_R6">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">1</property>
+        <property name="top-attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CB_R5">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">1</property>
+        <property name="top-attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CB_R4">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">1</property>
+        <property name="top-attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CB_R3">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">1</property>
+        <property name="top-attach">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CB_R2">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">1</property>
+        <property name="top-attach">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CB_R1">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">1</property>
+        <property name="top-attach">7</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CC_R8">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">2</property>
+        <property name="top-attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CC_R7">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">2</property>
+        <property name="top-attach">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CC_R6">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">2</property>
+        <property name="top-attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CC_R5">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">2</property>
+        <property name="top-attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CC_R4">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">2</property>
+        <property name="top-attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CC_R3">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">2</property>
+        <property name="top-attach">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CC_R2">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">2</property>
+        <property name="top-attach">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CC_R1">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">2</property>
+        <property name="top-attach">7</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CD_R8">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">3</property>
+        <property name="top-attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CD_R7">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">3</property>
+        <property name="top-attach">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CD_R6">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">3</property>
+        <property name="top-attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CD_R5">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">3</property>
+        <property name="top-attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CD_R4">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">3</property>
+        <property name="top-attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CD_R3">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">3</property>
+        <property name="top-attach">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CD_R2">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">3</property>
+        <property name="top-attach">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CD_R1">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">3</property>
+        <property name="top-attach">7</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CE_R8">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">4</property>
+        <property name="top-attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CE_R7">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">4</property>
+        <property name="top-attach">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CE_R6">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">4</property>
+        <property name="top-attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CE_R5">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">4</property>
+        <property name="top-attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CE_R4">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">4</property>
+        <property name="top-attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CE_R3">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">4</property>
+        <property name="top-attach">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CE_R2">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">4</property>
+        <property name="top-attach">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CE_R1">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">4</property>
+        <property name="top-attach">7</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CF_R8">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">5</property>
+        <property name="top-attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CF_R7">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">5</property>
+        <property name="top-attach">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CF_R6">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">5</property>
+        <property name="top-attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CF_R5">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">5</property>
+        <property name="top-attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CF_R4">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">5</property>
+        <property name="top-attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CF_R3">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">5</property>
+        <property name="top-attach">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CF_R2">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">5</property>
+        <property name="top-attach">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CF_R1">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">5</property>
+        <property name="top-attach">7</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CG_R8">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">6</property>
+        <property name="top-attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CG_R7">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">6</property>
+        <property name="top-attach">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CG_R6">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">6</property>
+        <property name="top-attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CG_R5">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">6</property>
+        <property name="top-attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CG_R4">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">6</property>
+        <property name="top-attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CG_R3">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">6</property>
+        <property name="top-attach">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CG_R2">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">6</property>
+        <property name="top-attach">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CG_R1">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">6</property>
+        <property name="top-attach">7</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CH_R8">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">7</property>
+        <property name="top-attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CH_R7">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">7</property>
+        <property name="top-attach">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CH_R6">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">7</property>
+        <property name="top-attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CH_R5">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">7</property>
+        <property name="top-attach">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CH_R4">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">7</property>
+        <property name="top-attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CH_R3">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">7</property>
+        <property name="top-attach">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CH_R2">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">7</property>
+        <property name="top-attach">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="BoardBoxWidget" id="CH_R1">
+        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left-attach">7</property>
+        <property name="top-attach">7</property>
+      </packing>
+    </child>
+    <style>
+      <class name="check_board"/>
+    </style>
+  </template>
+
+</interface>

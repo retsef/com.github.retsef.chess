@@ -14,9 +14,9 @@ executable(
     'engine/pieces/Bishop.vala',
     'engine/pieces/King.vala',
     'engine/pieces/Queen.vala',
-    # Views
-    'views/BoardView.vala',
-    'views/BoardBoxView.vala',
+    # Widgets
+    'widgets/BoardWidget.vala',
+    'widgets/BoardBoxWidget.vala',
 
     chess_resources,
     dependencies: [
