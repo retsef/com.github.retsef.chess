@@ -128,12 +128,9 @@ public class BoardEngine {
             stdout.printf ("%s => %s\n", entry.key.to_string(), entry.value.to_string());
             var coordinate = entry.key;
             var piece = entry.value;
-            var btn = board.get_child_at(coordinate.column, coordinate.row) as Gtk.Button;
+            var btn = board.get_child_at(coordinate.column, coordinate.row) as BoardBoxWidget;
 
-            var container = btn.get_children().first().data as Gtk.Layout;
-            var image = container.get_children().first().data as Gtk.Image;
-
-            image.set_from_resource(piece.symbol_resource());
+            btn.set_piece(piece);
         }
     }
 
