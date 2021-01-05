@@ -128,9 +128,11 @@ public class BoardEngine {
             stdout.printf ("%s => %s\n", entry.key.to_string(), entry.value.to_string());
             var coordinate = entry.key;
             var piece = entry.value;
-            var btn = board.get_child_at(coordinate.column, coordinate.row) as BoardBoxWidget;
+            // var btn = board.get_child_at(coordinate.column, coordinate.row) as BoardBoxWidget;
 
-            btn.set_piece(piece);
+            board.set_piece_in(piece, coordinate);
+
+            // btn.set_piece(piece);
         }
     }
 
