@@ -128,16 +128,13 @@ public class BoardEngine {
             stdout.printf ("%s => %s\n", entry.key.to_string(), entry.value.to_string());
             var coordinate = entry.key;
             var piece = entry.value;
-            // var btn = board.get_child_at(coordinate.column, coordinate.row) as BoardBoxWidget;
 
             board.set_piece_in(piece, coordinate);
-
-            // btn.set_piece(piece);
         }
     }
 
     [CCode (instance_pos = -1)]
-    public void on_checkboard_clicked(Gtk.Button source) {
+    public void on_checkboard_clicked(BoardBoxWidget source) {
         // stdout.printf ("%s => %s\n", entry.key.to_string(), entry.value.to_string());
         stdout.printf ("%s", "clicked!");
     }

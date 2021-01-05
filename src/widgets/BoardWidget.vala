@@ -150,6 +150,15 @@ public class BoardView : Gtk.Grid {
         btn.set_piece(piece);
     }
 
+    public void move_piece_from_to(Piece piece, Coordinate start, Coordinate end) {
+        var btn_start = this.get_box(start);
+        var btn_end = this.get_box(end);
+        if(btn_start == null || btn_end == null) return;
+
+        btn_start.remove_piece();
+        btn_end.set_piece(piece);
+    }
+
     public BoardBoxWidget get_box(Coordinate coordinate) {
         switch(coordinate.column) {
             case Coordinate.Column.CA: switch(coordinate.row) {

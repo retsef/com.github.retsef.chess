@@ -20,7 +20,7 @@ public class BoardBoxWidget : Gtk.Button {
         image.set_from_resource(piece.symbol_resource());
     }
 
-    public void unassign_piece() {
+    public void remove_piece() {
         this.piece = null;
 
         image.set_from_resource(null);

@@ -83,11 +83,11 @@ Author: Roberto Scinocca <roberto.scinnocca@gmail.com>
     <child type="titlebar">
       <object class="GtkHeaderBar" id="header">
         <property name="visible">True</property>
-        <property name="can-focus">False</property>
+        <property name="can-focus">False</property>q
         <property name="title" translatable="yes">Chess</property>
         <property name="show-close-button">True</property>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="new_game">
             <property name="label" translatable="yes">New Game</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
