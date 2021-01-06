@@ -18,7 +18,6 @@ public class Bishop : Piece {
     public override List<Coordinate> movement(Coordinate start) {
         var result = new List<Coordinate>();
 
-
         if(!start.row.is_last() && !start.column.is_last()) {
             result.append(new Coordinate(start.row.next(), start.column.next()));
 

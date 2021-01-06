@@ -1,4 +1,6 @@
-public class Coordinate {
+using Gee;
+
+public class Coordinate : Object, Comparable<Coordinate>, Hashable<Coordinate> {
     public enum Row {
         R1, R2, R3, R4, R5, R6, R7, R8;
 
@@ -12,6 +14,20 @@ public class Coordinate {
                 case R6: return "6";
                 case R7: return "7";
                 case R8: return "8";
+                default: assert_not_reached();
+            }
+        }
+
+        public static Row from_string(string row) {
+            switch (row) {
+                case "1": return R1;
+                case "2": return R2;
+                case "3": return R3;
+                case "4": return R4;
+                case "5": return R5;
+                case "6": return R6;
+                case "7": return R7;
+                case "8": return R8;
                 default: assert_not_reached();
             }
         }
@@ -64,6 +80,20 @@ public class Coordinate {
             }
         }
 
+        public static Column from_string(string col) {
+            switch (col) {
+                case "A": return CA;
+                case "B": return CB;
+                case "C": return CC;
+                case "D": return CD;
+                case "E": return CE;
+                case "F": return CF;
+                case "G": return CG;
+                case "H": return CH;
+                default: assert_not_reached();
+            }
+        }
+
         public bool is_before(Column col) {
             return this > col;
         }
@@ -95,27 +125,37 @@ public class Coordinate {
         }
     }
 
-    public Row row;
-    public Column column;
+    public Row row { get; set; }
+    public Column column { get; set; }
 
     public Coordinate(Row row, Column column) {
         this.row = row;
         this.column = column;
     }
 
+    // public Coordinate(string row, string column) {
+    //     this.row = Coordinate.Row.from_string(row);
+    //     this.column = Coordinate.Colum.from_string(column);
+    // }
 
-    public bool equals(Object obj) {
-        if(obj == null) return false;
-        //if(this.getClass()!=obj.getClass()) return false;
-
-        Coordinate c = (Coordinate) obj;
+    public bool equal_to(Coordinate c) {
         return this.row == c.row && this.column == c.column;
     }
 
+    public int compare_to (Coordinate object) {
+        return this.equal_to(object) ? 1 : -1;
+    }
 
+    // Deprecated
+    public bool equals(Coordinate object) {
+        return this.equal_to(object);
+    }
+
+    public uint hash () {
+        return this.column + (this.row * 10);
+    }
 
     public string to_string() {
         return this.row.to_string() + this.column.to_string();
     }
-
 }

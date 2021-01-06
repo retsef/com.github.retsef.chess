@@ -1,10 +1,8 @@
 # Create a new executable, list the files we want to compile, list the dependencies we need, and install
-executable(
-    meson.project_name(),
+sources = files(
     'Application.vala',
     # Primitives
     'engine/Coordinate.vala',
-    # Engine
     'engine/BoardEngine.vala',
     # Pieces
     'engine/pieces/Piece.vala',
@@ -16,16 +14,22 @@ executable(
     'engine/pieces/Queen.vala',
     # Widgets
     'widgets/BoardWidget.vala',
-    'widgets/BoardBoxWidget.vala',
+    'widgets/BoardBoxWidget.vala'
+)
 
+deps = [
+    gtk_dependency,
+    granite_dependency,
+    gee_dependency,
+    gmodule_dependency,
+    glib_dependency,
+    gobject_dependency
+]
+
+executable(
+    meson.project_name(),
+    sources,
     chess_resources,
-    dependencies: [
-        dependency('gtk+-3.0'),
-        dependency('gmodule-2.0'),
-        dependency('glib-2.0'),
-        dependency('gobject-2.0'),
-        dependency('gee-0.8'),
-        #dependency('granite', version: '>=5.2.0')
-    ],
+    dependencies: deps,
     install: true
 )

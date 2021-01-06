@@ -19,7 +19,6 @@ public class Rook : Piece {
     public override List<Coordinate> movement(Coordinate start) {
         var result = new List<Coordinate>();
 
-
         if(!start.row.is_last()) {
             result.append(new Coordinate(start.row.next(), start.column));
 
@@ -61,7 +60,6 @@ public class Rook : Piece {
                 result.append(new Coordinate(last.row, last.column.prev()));
             }
         }
-
 
         return result;
     }

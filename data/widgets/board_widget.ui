@@ -4,7 +4,7 @@
   <!-- interface-local-resource-path /home/roberto/Projects/Chess/data/widgets -->
 
   <!-- n-columns=8 n-rows=8 -->
-  <template class="BoardView" parent="GtkGrid">
+  <template class="BoardWidget" parent="GtkGrid">
     <property name="name">CheckBoard</property>
     <property name="width-request">680</property>
     <property name="height-request">680</property>
@@ -17,7 +17,9 @@
     <property name="column-homogeneous">True</property>
     <child>
       <object class="BoardBoxWidget" id="CA_R8">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">A</property>
+        <property name="coordinate_row">8</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">0</property>
@@ -26,7 +28,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CA_R7">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">A</property>
+        <property name="coordinate_row">7</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">0</property>
@@ -35,7 +39,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CA_R6">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">A</property>
+        <property name="coordinate_row">6</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">0</property>
@@ -44,7 +50,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CA_R5">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">A</property>
+        <property name="coordinate_row">5</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">0</property>
@@ -53,7 +61,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CA_R4">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">A</property>
+        <property name="coordinate_row">4</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">0</property>
@@ -62,7 +72,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CA_R3">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">A</property>
+        <property name="coordinate_row">3</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">0</property>
@@ -71,7 +83,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CA_R2">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">A</property>
+        <property name="coordinate_row">2</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">0</property>
@@ -80,7 +94,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CA_R1">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">A</property>
+        <property name="coordinate_row">1</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">0</property>
@@ -89,7 +105,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CB_R8">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">B</property>
+        <property name="coordinate_row">8</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">1</property>
@@ -98,7 +116,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CB_R7">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">B</property>
+        <property name="coordinate_row">7</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">1</property>
@@ -107,7 +127,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CB_R6">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">B</property>
+        <property name="coordinate_row">6</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">1</property>
@@ -116,7 +138,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CB_R5">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">B</property>
+        <property name="coordinate_row">5</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">1</property>
@@ -125,7 +149,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CB_R4">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">B</property>
+        <property name="coordinate_row">4</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">1</property>
@@ -134,7 +160,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CB_R3">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">B</property>
+        <property name="coordinate_row">3</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">1</property>
@@ -143,7 +171,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CB_R2">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">B</property>
+        <property name="coordinate_row">2</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">1</property>
@@ -152,7 +182,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CB_R1">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">B</property>
+        <property name="coordinate_row">1</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">1</property>
@@ -161,7 +193,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CC_R8">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">C</property>
+        <property name="coordinate_row">8</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">2</property>
@@ -170,7 +204,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CC_R7">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">C</property>
+        <property name="coordinate_row">7</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">2</property>
@@ -179,7 +215,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CC_R6">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">C</property>
+        <property name="coordinate_row">6</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">2</property>
@@ -188,7 +226,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CC_R5">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">C</property>
+        <property name="coordinate_row">5</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">2</property>
@@ -197,7 +237,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CC_R4">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">C</property>
+        <property name="coordinate_row">4</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">2</property>
@@ -206,7 +248,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CC_R3">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">C</property>
+        <property name="coordinate_row">3</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">2</property>
@@ -215,7 +259,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CC_R2">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">C</property>
+        <property name="coordinate_row">2</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">2</property>
@@ -224,7 +270,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CC_R1">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">C</property>
+        <property name="coordinate_row">1</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">2</property>
@@ -233,7 +281,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CD_R8">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">D</property>
+        <property name="coordinate_row">8</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">3</property>
@@ -242,7 +292,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CD_R7">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">D</property>
+        <property name="coordinate_row">7</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">3</property>
@@ -251,7 +303,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CD_R6">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">D</property>
+        <property name="coordinate_row">6</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">3</property>
@@ -260,7 +314,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CD_R5">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">D</property>
+        <property name="coordinate_row">5</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">3</property>
@@ -269,7 +325,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CD_R4">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">D</property>
+        <property name="coordinate_row">4</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">3</property>
@@ -278,7 +336,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CD_R3">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">D</property>
+        <property name="coordinate_row">3</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">3</property>
@@ -287,7 +347,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CD_R2">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">D</property>
+        <property name="coordinate_row">2</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">3</property>
@@ -296,7 +358,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CD_R1">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">D</property>
+        <property name="coordinate_row">1</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">3</property>
@@ -305,7 +369,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CE_R8">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">E</property>
+        <property name="coordinate_row">8</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">4</property>
@@ -314,7 +380,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CE_R7">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">E</property>
+        <property name="coordinate_row">7</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">4</property>
@@ -323,7 +391,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CE_R6">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">E</property>
+        <property name="coordinate_row">6</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">4</property>
@@ -332,7 +402,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CE_R5">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">E</property>
+        <property name="coordinate_row">5</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">4</property>
@@ -341,7 +413,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CE_R4">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">E</property>
+        <property name="coordinate_row">4</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">4</property>
@@ -350,7 +424,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CE_R3">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">E</property>
+        <property name="coordinate_row">3</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">4</property>
@@ -359,7 +435,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CE_R2">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">E</property>
+        <property name="coordinate_row">2</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">4</property>
@@ -368,7 +446,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CE_R1">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">E</property>
+        <property name="coordinate_row">1</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">4</property>
@@ -377,7 +457,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CF_R8">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">F</property>
+        <property name="coordinate_row">8</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">5</property>
@@ -386,7 +468,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CF_R7">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">F</property>
+        <property name="coordinate_row">7</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">5</property>
@@ -395,7 +479,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CF_R6">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">F</property>
+        <property name="coordinate_row">6</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">5</property>
@@ -404,7 +490,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CF_R5">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">F</property>
+        <property name="coordinate_row">5</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">5</property>
@@ -413,7 +501,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CF_R4">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">F</property>
+        <property name="coordinate_row">4</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">5</property>
@@ -422,7 +512,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CF_R3">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">F</property>
+        <property name="coordinate_row">3</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">5</property>
@@ -431,7 +523,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CF_R2">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">F</property>
+        <property name="coordinate_row">2</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">5</property>
@@ -440,7 +534,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CF_R1">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">F</property>
+        <property name="coordinate_row">1</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">5</property>
@@ -449,7 +545,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CG_R8">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">G</property>
+        <property name="coordinate_row">8</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">6</property>
@@ -458,7 +556,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CG_R7">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">G</property>
+        <property name="coordinate_row">7</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">6</property>
@@ -467,7 +567,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CG_R6">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">G</property>
+        <property name="coordinate_row">6</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">6</property>
@@ -476,7 +578,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CG_R5">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">G</property>
+        <property name="coordinate_row">5</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">6</property>
@@ -485,7 +589,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CG_R4">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">G</property>
+        <property name="coordinate_row">4</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">6</property>
@@ -494,7 +600,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CG_R3">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">G</property>
+        <property name="coordinate_row">3</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">6</property>
@@ -503,7 +611,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CG_R2">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">G</property>
+        <property name="coordinate_row">2</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">6</property>
@@ -512,7 +622,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CG_R1">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">G</property>
+        <property name="coordinate_row">1</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">6</property>
@@ -521,7 +633,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CH_R8">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">H</property>
+        <property name="coordinate_row">8</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">7</property>
@@ -530,7 +644,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CH_R7">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">H</property>
+        <property name="coordinate_row">7</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">7</property>
@@ -539,7 +655,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CH_R6">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">H</property>
+        <property name="coordinate_row">6</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">7</property>
@@ -548,7 +666,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CH_R5">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">H</property>
+        <property name="coordinate_row">5</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">7</property>
@@ -557,7 +677,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CH_R4">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">H</property>
+        <property name="coordinate_row">4</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">7</property>
@@ -566,7 +688,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CH_R3">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">H</property>
+        <property name="coordinate_row">3</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">7</property>
@@ -575,7 +699,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CH_R2">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">H</property>
+        <property name="coordinate_row">2</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">7</property>
@@ -584,7 +710,9 @@
     </child>
     <child>
       <object class="BoardBoxWidget" id="CH_R1">
-        <signal name="clicked" handler="board_engine_on_checkboard_clicked" swapped="no"/>
+        <property name="coordinate_column">H</property>
+        <property name="coordinate_row">1</property>
+        <signal name="clicked" handler="board_widget_on_board_clicked" swapped="no"/>
       </object>
       <packing>
         <property name="left-attach">7</property>

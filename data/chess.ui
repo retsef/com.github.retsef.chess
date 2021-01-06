@@ -59,7 +59,7 @@ Author: Roberto Scinocca <roberto.scinnocca@gmail.com>
         </child>
         <child>
           <!-- n-columns=8 n-rows=8 -->
-          <object class="BoardView" id="board">
+          <object class="BoardWidget" id="board">
             <property name="name">CheckBoard</property>
             <property name="width-request">680</property>
             <property name="height-request">680</property>
@@ -92,6 +92,9 @@ Author: Roberto Scinocca <roberto.scinnocca@gmail.com>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
+            <style>
+              <class name="new_game_btn"/>
+            </style>
           </object>
         </child>
       </object>

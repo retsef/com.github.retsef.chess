@@ -6,6 +6,9 @@ headerbar.titlebar {
     background: #803D0E;
 }
 
+headerbar .new_game_btn {
+    background: rgba(129, 61, 15, 0.3)
+}
 
 /** button **/
 .check_board button {
