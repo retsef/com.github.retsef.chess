@@ -27,12 +27,19 @@ public class BoardEngine {
         // this.board.on_board_clicked.connect(this.on_checkboard_clicked);
         this.board.on_box_clicked.connect(this.on_coordinate_select);
 
-        HashDataFunc<Coordinate> keyfunc = (a) => { return a.row+a.column; };
-        EqualDataFunc<Coordinate> eqfunc = (as1, as2) => { return as1.equals(as2); };
-        this.battlefield = new HashMap<Coordinate, Piece>(keyfunc, eqfunc);
+        // HashDataFunc<Coordinate> keyfunc = (a) => { return a.row+a.column; };
+        // EqualDataFunc<Coordinate> eqfunc = (as1, as2) => { return as1.equals(as2); };
+        this.battlefield = new HashMap<Coordinate, Piece>();
 
-        this.piece_possible_moves = new ArrayList<Coordinate>(eqfunc);
-        this.piece_possible_eats = new ArrayList<Coordinate>(eqfunc);
+        this.piece_possible_moves = new ArrayList<Coordinate>();
+        this.piece_possible_eats = new ArrayList<Coordinate>();
+    }
+
+
+    [HasEmitter]
+    [CCode (instance_pos = -1)]
+    public void on_new_game(Gtk.Button button) {
+        this.start();
     }
 
     [HasEmitter]
@@ -44,8 +51,9 @@ public class BoardEngine {
 
         // Mossa Successiva
         if(this.selected_piece != null && this.selected_coordinate != null) {
-            //stdout.printf ("%s from %s to %s\n", this.selected_piece.to_string(), selected_coordinate.to_string(), coordinate.to_string());
             if(this.piece_possible_moves.contains(coordinate)) {
+                stdout.printf ("%s from %s to %s\n", this.selected_piece.to_string(), selected_coordinate.to_string(), coordinate.to_string());
+
                 this.battlefield.unset(this.selected_coordinate);
                 this.battlefield.set(this.selected_coordinate, this.selected_piece);
 
@@ -59,6 +67,10 @@ public class BoardEngine {
                 this.STATUS = this.STATUS.next();
                 return;
             }
+
+
+            this.selected_piece = null;
+            this.selected_coordinate = null;
         }
 
         this.board.clear_all_moves();
@@ -98,6 +110,7 @@ public class BoardEngine {
 
     public void start() {
         battlefield.clear();
+        board.clear();
 
         place_player_1(Piece.Colour.White);
         place_player_2(Piece.Colour.Black);

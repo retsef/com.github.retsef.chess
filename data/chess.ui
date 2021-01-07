@@ -92,6 +92,7 @@ Author: Roberto Scinocca <roberto.scinnocca@gmail.com>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
+            <signal name="clicked" handler="board_engine_on_new_game" swapped="no"/>
             <style>
               <class name="new_game_btn"/>
             </style>

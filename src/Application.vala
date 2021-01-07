@@ -47,10 +47,10 @@ public class ChessApp : Gtk.Application {
             engine = new BoardEngine(board);
 
             // Actions
+            builder.connect_signals(engine);
             builder.connect_signals(board);
 
             engine.start();
-
 
             var window = builder.get_object("window") as Gtk.Window;
             window.destroy.connect(Gtk.main_quit);

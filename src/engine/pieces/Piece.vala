@@ -1,4 +1,4 @@
-public abstract class Piece {
+public abstract class Piece : Object {
     public enum Colour {
         White, Black;
 

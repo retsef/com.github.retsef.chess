@@ -143,16 +143,11 @@ public class Coordinate : Object, Comparable<Coordinate>, Hashable<Coordinate> {
     }
 
     public int compare_to (Coordinate object) {
-        return this.equal_to(object) ? 1 : -1;
-    }
-
-    // Deprecated
-    public bool equals(Coordinate object) {
-        return this.equal_to(object);
+        return this.equal_to(object) ? 0 : -1;
     }
 
     public uint hash () {
-        return this.column + (this.row * 10);
+        return (uint)(this.column + (this.row * 10)) & 0xffff;
     }
 
     public string to_string() {

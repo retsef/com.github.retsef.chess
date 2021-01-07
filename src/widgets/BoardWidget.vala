@@ -163,6 +163,11 @@ public class BoardWidget : Gtk.Grid {
         // this.board.on_board_clicked.connect
     }
 
+    public void clear() {
+        this.clear_all_moves();
+        this.remove_all_pieces();
+    }
+
     public void set_piece_in(Piece piece, Coordinate coordinate) {
         var btn = this.get_box(coordinate);
         if(btn == null) return;
@@ -197,6 +202,18 @@ public class BoardWidget : Gtk.Grid {
 
                 box.get_style_context().remove_class("move");
                 box.get_style_context().remove_class("eat");
+            }
+        }
+    }
+
+    public void remove_all_pieces() {
+        foreach (var row in Coordinate.Row.all()) {
+            foreach (var column in Coordinate.Column.all()) {
+                var coordinate = new Coordinate(row, column);
+                var box = get_box(coordinate);
+                if(box == null) continue;
+
+                box.remove_piece();
             }
         }
     }
