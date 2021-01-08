@@ -18,10 +18,10 @@ public class Bishop : Piece {
     public override List<Coordinate> movement(Coordinate start) {
         var result = new List<Coordinate>();
 
-        if(!start.row.is_last() && !start.column.is_last()) {
+        if(!start.is_last_row && !start.is_last_column) {
             result.append(new Coordinate(start.row.next(), start.column.next()));
 
-            while(!result.last().data.row.is_last() && !result.last().data.column.is_last()) {
+            while(!result.last().data.is_last_row && !result.last().data.is_last_column) {
                 var last = result.last().data;
 
                 result.append(new Coordinate(last.row.next(), last.column.next()));
@@ -29,10 +29,10 @@ public class Bishop : Piece {
         }
 
 
-        if(!start.row.is_last() && !start.column.is_first()) {
+        if(!start.is_last_row && !start.is_first_column) {
             result.append(new Coordinate(start.row.next(), start.column.prev()));
 
-            while(!result.last().data.row.is_last() && !result.last().data.column.is_first()) {
+            while(!result.last().data.is_last_row && !result.last().data.is_first_column) {
                 var last = result.last().data;
 
                 result.append(new Coordinate(last.row.next(), last.column.prev()));
@@ -40,10 +40,10 @@ public class Bishop : Piece {
         }
 
 
-        if(!start.row.is_first() && !start.column.is_last()) {
+        if(!start.is_first_row && !start.is_last_column) {
             result.append(new Coordinate(start.row.prev(), start.column.next()));
 
-            while(!result.last().data.row.is_first() && !result.last().data.column.is_last()) {
+            while(!result.last().data.is_first_row && !result.last().data.is_last_column) {
                 var last = result.last().data;
 
                 result.append(new Coordinate(last.row.prev(), last.column.next()));
@@ -51,10 +51,10 @@ public class Bishop : Piece {
         }
 
 
-        if(!start.row.is_first() && !start.column.is_first()) {
+        if(!start.is_first_row && !start.is_first_column) {
             result.append(new Coordinate(start.row.prev(), start.column.prev()));
 
-            while(!result.last().data.row.is_first() && !result.last().data.column.is_first()) {
+            while(!result.last().data.is_first_row && !result.last().data.is_first_column) {
                 var last = result.last().data;
 
                 result.append(new Coordinate(last.row.prev(), last.column.prev()));

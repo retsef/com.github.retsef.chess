@@ -18,19 +18,19 @@ public class King : Piece {
     public override List<Coordinate> movement(Coordinate start) {
         var result = new List<Coordinate>();
 
-        if(!start.row.is_first()) {
+        if(!start.is_first_row) {
             result.append(new Coordinate(
                 start.row.prev(),
                 start.column
             ));
         }
-        if(!start.column.is_first()) {
+        if(!start.is_first_column) {
             result.append(new Coordinate(
                 start.row,
                 start.column.prev()
             ));
         }
-        if(!start.row.is_first() && start.column.is_first()) {
+        if(!start.is_first_row && start.is_first_column) {
             result.append(new Coordinate(
                 start.row.prev(),
                 start.column.prev()
@@ -38,19 +38,19 @@ public class King : Piece {
         }
 
 
-        if(!start.row.is_last()) {
+        if(!start.is_last_row) {
             result.append(new Coordinate(
                 start.row.next(),
                 start.column
             ));
         }
-        if(!start.column.is_last()) {
+        if(!start.is_last_column) {
             result.append(new Coordinate(
                 start.row,
                 start.column.next()
             ));
         }
-        if(!start.row.is_last() && start.column.is_last()) {
+        if(!start.is_last_row && start.is_last_column) {
             result.append(new Coordinate(
                 start.row.next(),
                 start.column.next()

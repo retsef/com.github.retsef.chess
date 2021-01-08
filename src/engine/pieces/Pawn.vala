@@ -20,24 +20,24 @@ public class Pawn : Piece{
         var result = new List<Coordinate>();
 
         if(colour == Piece.Colour.White) {
-            if(start.row.is_last()) return result;
+            if(start.is_last_row) return result;
 
             var coord = new Coordinate(start.row.next(), start.column);
             result.append(coord);
 
-            if(coord.row.is_last()) return result;
+            if(coord.is_last_row) return result;
             result.append(new Coordinate(coord.row.next(), coord.column));
 
             return result;
         }
 
         if(colour == Piece.Colour.Black) {
-            if(start.row.is_first()) return result;
+            if(start.is_first_row) return result;
 
             var coord = new Coordinate(start.row.prev(), start.column);
             result.append(coord);
 
-            if(coord.row.is_first()) return result;
+            if(coord.is_first_row) return result;
             result.append(new Coordinate(coord.row.prev(), coord.column));
 
             return result;

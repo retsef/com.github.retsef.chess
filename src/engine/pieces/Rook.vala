@@ -19,20 +19,20 @@ public class Rook : Piece {
     public override List<Coordinate> movement(Coordinate start) {
         var result = new List<Coordinate>();
 
-        if(!start.row.is_last()) {
+        if(!start.is_last_row) {
             result.append(new Coordinate(start.row.next(), start.column));
 
-            while(!result.last().data.row.is_last()) {
+            while(!result.last().data.is_last_row) {
                 var last = result.last().data;
 
                 result.append(new Coordinate(last.row.next(), last.column));
             }
         }
 
-        if(!start.row.is_first()) {
+        if(!start.is_first_row) {
             result.append(new Coordinate(start.row.prev(), start.column));
 
-            while(!result.last().data.row.is_first()) {
+            while(!result.last().data.is_first_row) {
                 var last = result.last().data;
 
                 result.append(new Coordinate(last.row.prev(), last.column));
@@ -40,10 +40,10 @@ public class Rook : Piece {
         }
 
 
-        if(!start.column.is_last()) {
+        if(!start.is_last_column) {
             result.append(new Coordinate(start.row, start.column.next()));
 
-            while(!result.last().data.column.is_last()) {
+            while(!result.last().data.is_last_column) {
                 var last = result.last().data;
 
                 result.append(new Coordinate(last.row, last.column.next()));
@@ -51,10 +51,10 @@ public class Rook : Piece {
         }
 
 
-        if(!start.column.is_first()) {
+        if(!start.is_first_column) {
             result.append(new Coordinate(start.row, start.column.prev()));
 
-            while(!result.last().data.column.is_first()) {
+            while(!result.last().data.is_first_column) {
                 var last = result.last().data;
 
                 result.append(new Coordinate(last.row, last.column.prev()));

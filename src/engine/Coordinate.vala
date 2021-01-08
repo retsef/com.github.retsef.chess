@@ -138,7 +138,58 @@ public class Coordinate : Object, Comparable<Coordinate>, Hashable<Coordinate> {
     //     this.column = Coordinate.Colum.from_string(column);
     // }
 
-    public bool equal_to(Coordinate c) {
+    // Checks
+    public bool is_last_row {
+        get { return this.row.is_last(); }
+    }
+
+    public bool is_first_row {
+        get { return this.row.is_first(); }
+    }
+
+    public bool is_last_column {
+        get { return this.column.is_last(); }
+    }
+
+    public bool is_first_column {
+        get { return this.column.is_first(); }
+    }
+
+    // Operations
+    public Coordinate top() {
+        return new Coordinate(this.row.next(), this.column);
+    }
+
+    public Coordinate bottom() {
+        return new Coordinate(this.row.prev(), this.column);
+    }
+
+    public Coordinate right() {
+        return new Coordinate(this.row, this.column.next());
+    }
+
+    public Coordinate left() {
+        return new Coordinate(this.row, this.column.prev());
+    }
+
+    public Coordinate top_right() {
+        return new Coordinate(this.row.next(), this.column.next());
+    }
+
+    public Coordinate bottom_right() {
+        return new Coordinate(this.row.prev(), this.column.next());
+    }
+
+    public Coordinate top_left() {
+        return new Coordinate(this.row.next(), this.column.prev());
+    }
+
+    public Coordinate bottom_left() {
+        return new Coordinate(this.row.prev(), this.column.prev());
+    }
+
+    // Misc
+    public bool equal_to (Coordinate c) {
         return this.row == c.row && this.column == c.column;
     }
 
