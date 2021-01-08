@@ -1,3 +1,5 @@
+using Gee;
+
 public class King : Piece {
 
     public King(Piece.Colour colour) {
@@ -15,28 +17,28 @@ public class King : Piece {
         return "King " + base.colour.to_string();
     }
 
-    public override List<Coordinate> movement(Coordinate start) {
-        var result = new List<Coordinate>();
+    public override Gee.List<Coordinate> movement(Coordinate start) {
+        var result = new ArrayList<Coordinate>();
 
         if(!start.is_first_row) {
-            result.append(start.bottom());
+            result.add(start.bottom());
         }
         if(!start.is_first_column) {
-            result.append(start.left());
+            result.add(start.left());
         }
         if(!start.is_first_row && start.is_first_column) {
-            result.append(start.bottom_left());
+            result.add(start.bottom_left());
         }
 
 
         if(!start.is_last_row) {
-            result.append(start.top());
+            result.add(start.top());
         }
         if(!start.is_last_column) {
-            result.append(start.right());
+            result.add(start.right());
         }
         if(!start.is_last_row && start.is_last_column) {
-            result.append(start.top_right());
+            result.add(start.top_right());
         }
 
         return result;

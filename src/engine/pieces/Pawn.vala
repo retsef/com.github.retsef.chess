@@ -1,3 +1,5 @@
+using Gee;
+
 public class Pawn : Piece{
 
     public Pawn(Piece.Colour colour) {
@@ -16,17 +18,17 @@ public class Pawn : Piece{
         return "Pawn " + base.colour.to_string();
     }
 
-    public override List<Coordinate> movement(Coordinate start) {
-        var result = new List<Coordinate>();
+    public override Gee.List<Coordinate> movement(Coordinate start) {
+        var result = new ArrayList<Coordinate>();
 
         if(colour == Piece.Colour.White) {
             if(start.is_last_row) return result;
 
             var coord = start.top();
-            result.append(coord);
+            result.add(coord);
 
             if(coord.is_last_row) return result;
-            result.append(coord.top());
+            result.add(coord.top());
 
             return result;
         }
@@ -35,10 +37,10 @@ public class Pawn : Piece{
             if(start.is_first_row) return result;
 
             var coord = start.bottom();
-            result.append(coord);
+            result.add(coord);
 
             if(coord.is_first_row) return result;
-            result.append(coord.bottom());
+            result.add(coord.bottom());
 
             return result;
         }

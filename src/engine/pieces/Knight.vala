@@ -1,3 +1,5 @@
+using Gee;
+
 public class Knight : Piece {
 
     public Knight(Piece.Colour colour) {
@@ -16,8 +18,8 @@ public class Knight : Piece {
         return "Knight " + base.colour.to_string();
     }
 
-    public override List<Coordinate> movement(Coordinate start) {
-        var result = new List<Coordinate>();
+    public override Gee.List<Coordinate> movement(Coordinate start) {
+        var result = new ArrayList<Coordinate>();
 
 
 

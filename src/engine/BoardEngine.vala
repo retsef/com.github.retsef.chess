@@ -90,9 +90,7 @@ public class BoardEngine {
         this.selected_piece = piece;
 
         piece_possible_moves.clear();
-        this.selected_piece.movement(coordinate).foreach((coord) => {
-            piece_possible_moves.add(coord);
-        });
+        piece_possible_moves.add_all(this.selected_piece.movement(coordinate));
         // TODO: aggiungere un modo per oridinare le mosse in direzione rimmuovere i punti cechi
 
         this.board.show_moves_on(piece_possible_moves);

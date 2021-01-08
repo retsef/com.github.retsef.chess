@@ -1,3 +1,5 @@
+using Gee;
+
 public class Rook : Piece {
 
     public Rook(Piece.Colour colour) {
@@ -16,48 +18,48 @@ public class Rook : Piece {
         return "Rook " + base.colour.to_string();
     }
 
-    public override List<Coordinate> movement(Coordinate start) {
-        var result = new List<Coordinate>();
+    public override Gee.List<Coordinate> movement(Coordinate start) {
+        var result = new ArrayList<Coordinate>();
 
         if(!start.is_last_row) {
-            result.append(start.top());
+            result.add(start.top());
 
-            while(!result.last().data.is_last_row) {
-                var last = result.last().data;
+            while(!result.last().is_last_row) {
+                var last = result.last();
 
-                result.append(last.top());
+                result.add(last.top());
             }
         }
 
         if(!start.is_first_row) {
-            result.append(start.bottom());
+            result.add(start.bottom());
 
-            while(!result.last().data.is_first_row) {
-                var last = result.last().data;
+            while(!result.last().is_first_row) {
+                var last = result.last();
 
-                result.append(last.bottom());
+                result.add(last.bottom());
             }
         }
 
 
         if(!start.is_last_column) {
-            result.append(start.right());
+            result.add(start.right());
 
-            while(!result.last().data.is_last_column) {
-                var last = result.last().data;
+            while(!result.last().is_last_column) {
+                var last = result.last();
 
-                result.append(last.right());
+                result.add(last.right());
             }
         }
 
 
         if(!start.is_first_column) {
-            result.append(start.left());
+            result.add(start.left());
 
-            while(!result.last().data.is_first_column) {
-                var last = result.last().data;
+            while(!result.last().is_first_column) {
+                var last = result.last();
 
-                result.append(last.left());
+                result.add(last.left());
             }
         }
 

@@ -1,3 +1,5 @@
+using Gee;
+
 public abstract class Piece : Object {
     public enum Colour {
         White, Black;
@@ -24,7 +26,7 @@ public abstract class Piece : Object {
 
     public abstract string symbol_resource();
 
-    public abstract List<Coordinate> movement(Coordinate start);
+    public abstract Gee.List<Coordinate> movement(Coordinate start);
 
     public abstract string to_string();
 
