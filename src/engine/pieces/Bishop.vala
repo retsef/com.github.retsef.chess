@@ -19,45 +19,45 @@ public class Bishop : Piece {
         var result = new List<Coordinate>();
 
         if(!start.is_last_row && !start.is_last_column) {
-            result.append(new Coordinate(start.row.next(), start.column.next()));
+            result.append(start.top_right());
 
             while(!result.last().data.is_last_row && !result.last().data.is_last_column) {
                 var last = result.last().data;
 
-                result.append(new Coordinate(last.row.next(), last.column.next()));
+                result.append(last.top_right());
             }
         }
 
 
         if(!start.is_last_row && !start.is_first_column) {
-            result.append(new Coordinate(start.row.next(), start.column.prev()));
+            result.append(start.top_left());
 
             while(!result.last().data.is_last_row && !result.last().data.is_first_column) {
                 var last = result.last().data;
 
-                result.append(new Coordinate(last.row.next(), last.column.prev()));
+                result.append(last.top_left());
             }
         }
 
 
         if(!start.is_first_row && !start.is_last_column) {
-            result.append(new Coordinate(start.row.prev(), start.column.next()));
+            result.append(start.bottom_right());
 
             while(!result.last().data.is_first_row && !result.last().data.is_last_column) {
                 var last = result.last().data;
 
-                result.append(new Coordinate(last.row.prev(), last.column.next()));
+                result.append(last.bottom_right());
             }
         }
 
 
         if(!start.is_first_row && !start.is_first_column) {
-            result.append(new Coordinate(start.row.prev(), start.column.prev()));
+            result.append(start.bottom_left());
 
             while(!result.last().data.is_first_row && !result.last().data.is_first_column) {
                 var last = result.last().data;
 
-                result.append(new Coordinate(last.row.prev(), last.column.prev()));
+                result.append(last.bottom_left());
             }
         }
 

@@ -20,44 +20,44 @@ public class Rook : Piece {
         var result = new List<Coordinate>();
 
         if(!start.is_last_row) {
-            result.append(new Coordinate(start.row.next(), start.column));
+            result.append(start.top());
 
             while(!result.last().data.is_last_row) {
                 var last = result.last().data;
 
-                result.append(new Coordinate(last.row.next(), last.column));
+                result.append(last.top());
             }
         }
 
         if(!start.is_first_row) {
-            result.append(new Coordinate(start.row.prev(), start.column));
+            result.append(start.bottom());
 
             while(!result.last().data.is_first_row) {
                 var last = result.last().data;
 
-                result.append(new Coordinate(last.row.prev(), last.column));
+                result.append(last.bottom());
             }
         }
 
 
         if(!start.is_last_column) {
-            result.append(new Coordinate(start.row, start.column.next()));
+            result.append(start.right());
 
             while(!result.last().data.is_last_column) {
                 var last = result.last().data;
 
-                result.append(new Coordinate(last.row, last.column.next()));
+                result.append(last.right());
             }
         }
 
 
         if(!start.is_first_column) {
-            result.append(new Coordinate(start.row, start.column.prev()));
+            result.append(start.left());
 
             while(!result.last().data.is_first_column) {
                 var last = result.last().data;
 
-                result.append(new Coordinate(last.row, last.column.prev()));
+                result.append(last.left());
             }
         }
 

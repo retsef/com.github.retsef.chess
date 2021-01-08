@@ -22,11 +22,11 @@ public class Pawn : Piece{
         if(colour == Piece.Colour.White) {
             if(start.is_last_row) return result;
 
-            var coord = new Coordinate(start.row.next(), start.column);
+            var coord = start.top();
             result.append(coord);
 
             if(coord.is_last_row) return result;
-            result.append(new Coordinate(coord.row.next(), coord.column));
+            result.append(coord.top());
 
             return result;
         }
@@ -34,11 +34,11 @@ public class Pawn : Piece{
         if(colour == Piece.Colour.Black) {
             if(start.is_first_row) return result;
 
-            var coord = new Coordinate(start.row.prev(), start.column);
+            var coord = start.bottom();
             result.append(coord);
 
             if(coord.is_first_row) return result;
-            result.append(new Coordinate(coord.row.prev(), coord.column));
+            result.append(coord.bottom());
 
             return result;
         }
