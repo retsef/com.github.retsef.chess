@@ -13,6 +13,10 @@ public class Bishop : Piece {
         "/com/github/retsef/chess/pieces/BishopB.png";
     }
 
+    public override Piece clone() {
+        return new Bishop(this.colour);
+    }
+
     public override string to_string() {
         return "Bishop " + base.colour.to_string();
     }

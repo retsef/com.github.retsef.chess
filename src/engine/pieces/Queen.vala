@@ -14,6 +14,10 @@ public class Queen : Piece {
         "/com/github/retsef/chess/pieces/QueenB.png";
     }
 
+    public override Piece clone() {
+        return new Queen(this.colour);
+    }
+
     public override string to_string() {
         return "Queen " + base.colour.to_string();
     }

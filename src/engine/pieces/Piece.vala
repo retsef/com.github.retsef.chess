@@ -28,6 +28,8 @@ public abstract class Piece : Object {
 
     public abstract Gee.List<Coordinate> movement(Coordinate start);
 
+    public abstract Piece clone();
+
     public abstract string to_string();
 
 }

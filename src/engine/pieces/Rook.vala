@@ -14,6 +14,10 @@ public class Rook : Piece {
         "/com/github/retsef/chess/pieces/RookB.png";
     }
 
+    public override Piece clone() {
+        return new Rook(this.colour);
+    }
+
     public override string to_string() {
         return "Rook " + base.colour.to_string();
     }

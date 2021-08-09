@@ -189,6 +189,10 @@ public class Coordinate : Object, Comparable<Coordinate>, Hashable<Coordinate> {
     }
 
     // Misc
+    public Coordinate clone() {
+        return new Coordinate(this.row, this.column);
+    }
+
     public bool equal_to (Coordinate c) {
         return this.row == c.row && this.column == c.column;
     }

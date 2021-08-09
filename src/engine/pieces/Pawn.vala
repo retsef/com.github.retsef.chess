@@ -14,6 +14,10 @@ public class Pawn : Piece{
         "/com/github/retsef/chess/pieces/PawnB.png";
     }
 
+    public override Piece clone() {
+        return new Pawn(this.colour);
+    }
+
     public override string to_string() {
         return "Pawn " + base.colour.to_string();
     }

@@ -13,6 +13,10 @@ public class King : Piece {
         "/com/github/retsef/chess/pieces/KingB.png";
     }
 
+    public override Piece clone() {
+        return new King(this.colour);
+    }
+
     public override string to_string() {
         return "King " + base.colour.to_string();
     }

@@ -27,9 +27,9 @@ public class BoardEngine {
         // this.board.on_board_clicked.connect(this.on_checkboard_clicked);
         this.board.on_box_clicked.connect(this.on_coordinate_select);
 
-        // HashDataFunc<Coordinate> keyfunc = (a) => { return a.row+a.column; };
-        // EqualDataFunc<Coordinate> eqfunc = (as1, as2) => { return as1.equals(as2); };
-        this.battlefield = new HashMap<Coordinate, Piece>();
+        HashDataFunc<Coordinate> keyfunc = (a) => { return a.hash(); };
+        EqualDataFunc<Coordinate> eqfunc = (as1, as2) => { return as1.equal_to(as2); };
+        this.battlefield = new HashMap<Coordinate, Piece>(keyfunc, eqfunc);
 
         this.piece_possible_moves = new ArrayList<Coordinate>();
         this.piece_possible_eats = new ArrayList<Coordinate>();
